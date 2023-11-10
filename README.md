@@ -20,3 +20,11 @@ Kelompok 6 IF-45-12
 4. Shalom Delano (1301213410)
 5. Zaky Zaidan (1301213354)
 
+### Installation
+
+1. Clone the repository
+2. Run `npm install`
+
+### Usage
+
+1. Run `npm run`
