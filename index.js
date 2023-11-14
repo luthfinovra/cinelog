@@ -1,6 +1,13 @@
 const express = require('express');
 const path = require('path');
 const mongoose = require('mongoose');
+const ejsMate = require('ejs-mate');
+const passport = require('passport');
+const LocalStrategy = require('passport-local');
+const Pengguna = require('./models/pengguna');
+
+const penggunaRoutes = require('./routes/pengguna.js');
+const katalogRoutes = require('./routes/katalog.js');
 
 mongoose.connect('mongodb://127.0.0.1:27017/cinelog');
 
@@ -14,6 +21,18 @@ const app = express();
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
+app.engine('ejs', ejsMate);
+
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(passport.initialize());
+passport.use(new LocalStrategy(Pengguna.authenticate()));
+
+passport.serializeUser(Pengguna.serializeUser());
+passport.deserializeUser(Pengguna.deserializeUser());
+
+app.use('/', penggunaRoutes);
+app.use('/katalog', katalogRoutes);
 
 app.get('/', (req, res) => {
     res.render('home')

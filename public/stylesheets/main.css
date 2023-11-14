@@ -1,0 +1,26 @@
+body {
+    font-family: 'Glory', sans-serif;
+    background-color: #E8E8E8;
+}
+
+.btn-primary{
+    background-color: #30475E;
+    color: #E8E8E8;
+    border: 0.1em solid transparent;
+}
+
+.btn-primary:hover{
+    background-color: #D9D9D9;
+    color: #30475E;
+    border: 0.1em solid;
+    border-color: #30475E;
+}
+
+a {
+    color: #30475E;
+}
+
+.form-control {
+    width: 100%;
+    background-color: #D9D9D9;
+}

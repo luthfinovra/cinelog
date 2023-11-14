@@ -1,0 +1,50 @@
+.nav-link {
+    color: #000000;
+}
+
+.navbar {
+    background-color: #D9D9D9;
+    border-bottom: #222831 solid;
+}
+
+.navbar-brand {
+    color: #000000;
+    border-bottom: #000000 transparent;
+}
+
+.navbar-brand:hover{
+    border-color: transparent !important;
+}
+
+/* Base styling for navbar links */
+.navbar a {
+    padding: 5px 10px; /* Adjusted padding values */
+    text-decoration: none;
+    border-bottom: 2px solid transparent; /* Add a transparent underline */
+    transition: border-color 0.3s, color 0.3s; /* Smooth transition for border and text color */
+}
+
+/* Hover effect */
+.navbar a:hover {
+    border-color: #30475E; /* Change underline color on hover */
+    color: #30475E;
+}
+
+.navbar input {
+    background-color: #E8E8E8;
+}
+
+.navbar-toggler-icon {
+    color: #30475E;
+    transition: border-color 0.3s, color 0.3s;
+}
+
+.navbar-toggler:hover{
+    background-color: #E8E8E8;
+    color: #E8E8E8;
+    transition: border-color 0.3s, color 0.3s;
+}
+
+.navbar h1 {
+margin-bottom: 0;
+}
