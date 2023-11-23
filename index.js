@@ -8,6 +8,7 @@ const Pengguna = require('./models/pengguna');
 
 const penggunaRoutes = require('./routes/pengguna.js');
 const katalogRoutes = require('./routes/katalog.js');
+const filmRoutes = require('./routes/film.js');
 
 mongoose.connect('mongodb://127.0.0.1:27017/cinelog');
 
@@ -32,10 +33,14 @@ passport.serializeUser(Pengguna.serializeUser());
 passport.deserializeUser(Pengguna.deserializeUser());
 
 app.use('/', penggunaRoutes);
-app.use('/katalog', katalogRoutes);
+app.use('/film', filmRoutes);
+app.use('/katalog', katalogRoutes); 
+
+//Dummy data
+const films = require('./dummy.js');
 
 app.get('/', (req, res) => {
-    res.render('home')
+    res.render('home', films)
 })
 
 app.listen(3000, ()=>{

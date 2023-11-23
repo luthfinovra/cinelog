@@ -1,5 +1,12 @@
-<% layout('layout/boilerplate') %>
-<div class="container-fluid">
-    <h1>HOME</h1>
-    Welcome to Homepage
-</div>
+<% layout("layout/boilerplate") %>
+    <div class="container-fluid">
+        <h1>HOME</h1> Welcome to Homepage <div class="row">
+            <% for (let film of films) { %>
+                <div class="wrapper">
+                    <a class="image" href="/film/<%= film.id %>" title="<%= film.judul %>">
+                            <img class="poster" src="https://image.tmdb.org/t/p/w220_and_h330_face<%= film.link_cover %>" srcset="/t/p/w220_and_h330_face<%= film.link_cover %> 2x" alt="<%= film.judul %>">
+                    </a>
+                  </div>
+                <% } %>
+        </div>
+    </div>
