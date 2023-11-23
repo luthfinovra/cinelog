@@ -25,6 +25,21 @@ a {
     background-color: #D9D9D9;
 }
 
-.wrapper {
-    border-radius: 10em;
+.row .poster{
+    width: fit-content;
+    margin: 3px;
+}
+
+.card a {
+    color: black;
+    text-decoration: none;
+}
+
+.card a :hover {
+    color: black;
+    text-decoration:underline;
+}
+
+.wrapper{
+    margin-bottom: 30px;
 }
