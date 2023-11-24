@@ -37,7 +37,9 @@ app.use('/film', filmRoutes);
 app.use('/katalog', katalogRoutes); 
 
 //Dummy data
-const films = require('./dummy.js');
+films = require('./dummy.js');
+
+films = films.slice(0,7);
 
 app.get('/', (req, res) => {
     res.render('home', films)

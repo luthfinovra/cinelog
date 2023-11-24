@@ -1,7 +1,9 @@
 <% layout("layout/boilerplate") %>
     <div class="container-fluid">
         <div class="wrapper">
-            <h2>Daftar film populer (dummy) ></h2> 
+            <a href="/film/populer">
+                <h2>Daftar film populer (dummy) ></h2> 
+            </a>
             <div class="row">
                 <% for (let film of films) { %>
                             <div class="poster card"style="width: 10rem;">
@@ -16,7 +18,9 @@
             </div>
         </div>
         <div class="wrapper">
-        <h2>Rekomendasi untuk anda (dummy) ></h2> 
+        <a href="/film/rekomendasi">
+            <h2>Rekomendasi untuk anda (dummy) ></h2> 
+        </a>
         <div class="row">
             <% for (let film of films) { %>
                         <div class="poster card"style="width: 10rem;">

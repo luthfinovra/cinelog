@@ -1816,6 +1816,2969 @@ films = [
                 "character": "Dancer"
             }
         ]
+    },
+    {
+        "id": 11,
+        "judul": "Star Wars",
+        "durasi": 121,
+        "rating": 8.205,
+        "tahunRilis": "1977",
+        "sutradara": "George Lucas",
+        "link_cover": "/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg",
+        "genre": [
+            "Adventure",
+            "Action",
+            "Science Fiction"
+        ],
+        "sinopsis": "Princess Leia is captured and held hostage by the evil Imperial forces in their effort to take over the galactic Empire. Venturesome Luke Skywalker and dashing captain Han Solo team together with the loveable robot duo R2-D2 and C-3PO to rescue the beautiful princess and restore peace and justice in the Empire.",
+        "pemeran": [
+            {
+                "name": "Mark Hamill",
+                "character": "Luke Skywalker"
+            },
+            {
+                "name": "Harrison Ford",
+                "character": "Han Solo"
+            },
+            {
+                "name": "Carrie Fisher",
+                "character": "Princess Leia Organa"
+            },
+            {
+                "name": "Peter Cushing",
+                "character": "Grand Moff Tarkin"
+            },
+            {
+                "name": "Alec Guinness",
+                "character": "Obi-Wan \"Ben\" Kenobi"
+            },
+            {
+                "name": "Anthony Daniels",
+                "character": "C-3PO"
+            },
+            {
+                "name": "Kenny Baker",
+                "character": "R2-D2"
+            },
+            {
+                "name": "Peter Mayhew",
+                "character": "Chewbacca"
+            },
+            {
+                "name": "David Prowse",
+                "character": "Darth Vader (performer)"
+            },
+            {
+                "name": "James Earl Jones",
+                "character": "Darth Vader (voice)"
+            },
+            {
+                "name": "Phil Brown",
+                "character": "Uncle Owen"
+            },
+            {
+                "name": "Shelagh Fraser",
+                "character": "Aunt Beru"
+            },
+            {
+                "name": "Jack Purvis",
+                "character": "Chief Jawa"
+            },
+            {
+                "name": "Alex McCrindle",
+                "character": "General Dodonna"
+            },
+            {
+                "name": "Eddie Byrne",
+                "character": "General Willard"
+            },
+            {
+                "name": "Drewe Henley",
+                "character": "Red Leader"
+            },
+            {
+                "name": "Denis Lawson",
+                "character": "Red Two (Wedge Antilles)"
+            },
+            {
+                "name": "Garrick Hagon",
+                "character": "Red Three (Biggs Darklighter)"
+            },
+            {
+                "name": "Jack Klaff",
+                "character": "Red Four (John \"D\")"
+            },
+            {
+                "name": "William Hootkins",
+                "character": "Red Six (Porkins)"
+            },
+            {
+                "name": "Angus MacInnes",
+                "character": "Gold Leader"
+            },
+            {
+                "name": "Jeremy Sinden",
+                "character": "Gold Two"
+            },
+            {
+                "name": "Graham Ashley",
+                "character": "Gold Five"
+            },
+            {
+                "name": "Don Henderson",
+                "character": "General Taggi"
+            },
+            {
+                "name": "Richard LeParmentier",
+                "character": "General Motti"
+            },
+            {
+                "name": "Leslie Schofield",
+                "character": "Commander #1"
+            },
+            {
+                "name": "Michael Leader",
+                "character": "Stormtrooper"
+            },
+            {
+                "name": "David Ankrum",
+                "character": "Red Two, Wedge Antilles (voice) (uncredited)"
+            },
+            {
+                "name": "Scott Beach",
+                "character": "Stormtrooper (voice) (uncredited)"
+            },
+            {
+                "name": "Lightning Bear",
+                "character": "Stormtrooper (uncredited)"
+            },
+            {
+                "name": "Jon Berg",
+                "character": "Cantina Alien (uncredited)"
+            },
+            {
+                "name": "Doug Beswick",
+                "character": "Cantina Alien (uncredited)"
+            },
+            {
+                "name": "Paul Blake",
+                "character": "Greedo (uncredited)"
+            },
+            {
+                "name": "Janice Burchette",
+                "character": "Nabrun Leids (uncredited)"
+            },
+            {
+                "name": "Ted Burnett",
+                "character": "Wuher (uncredited)"
+            },
+            {
+                "name": "John Chapman",
+                "character": "Drifter (Red 12) (uncredited)"
+            },
+            {
+                "name": "Gilda Cohen",
+                "character": "Cantina Patron (uncredited)"
+            },
+            {
+                "name": "Tim Condren",
+                "character": "Stormtrooper (uncredited)"
+            },
+            {
+                "name": "Barry Copping",
+                "character": "Wioslea (uncredited)"
+            },
+            {
+                "name": "Alfie Curtis",
+                "character": "Dr. Evazan (uncredited)"
+            },
+            {
+                "name": "Robert Davies",
+                "character": "Cantina Patron (uncredited)"
+            },
+            {
+                "name": "Maria De Aragon",
+                "character": "Greedo (uncredited)"
+            },
+            {
+                "name": "Robert A. Denham",
+                "character": "Hrchek Kal Fas (uncredited)"
+            },
+            {
+                "name": "Frazer Diamond",
+                "character": "Jawa (uncredited)"
+            },
+            {
+                "name": "Peter Diamond",
+                "character": "Stormtrooper / Tusken Raider / Death Star Trooper / Garouf Lafoe (uncredited)"
+            },
+            {
+                "name": "Warwick Diamond",
+                "character": "Jawa (uncredited)"
+            },
+            {
+                "name": "Sadie Eden",
+                "character": "Garindan (uncredited)"
+            },
+            {
+                "name": "Kim Falkinburg",
+                "character": "Djas Puhr (uncredited)"
+            },
+            {
+                "name": "Harry Fielder",
+                "character": "Death Star Trooper (uncredited)"
+            },
+            {
+                "name": "Ted Gagliano",
+                "character": "Stormtrooper with Binoculars (uncredited)"
+            },
+            {
+                "name": "Salo Gardner",
+                "character": "Cantina Patron (uncredited)"
+            },
+            {
+                "name": "Steve Gawley",
+                "character": "Death Star Trooper (uncredited)"
+            },
+            {
+                "name": "Barry Gnome",
+                "character": "Kabe (uncredited)"
+            },
+            {
+                "name": "Rusty Goffe",
+                "character": "Kabe / Jawa / GONK Droid (uncredited)"
+            },
+            {
+                "name": "Isaac Grand",
+                "character": "Cantina Patron (uncredited)"
+            },
+            {
+                "name": "Reg Harding",
+                "character": "Stormtrooper (uncredited)"
+            },
+            {
+                "name": "Alan Harris",
+                "character": "Leia's Rebel Escort (uncredited)"
+            },
+            {
+                "name": "Frank Henson",
+                "character": "Stormtrooper (uncredited)"
+            },
+            {
+                "name": "Christine Hewett",
+                "character": "Brea Tonnika (uncredited)"
+            },
+            {
+                "name": "Arthur Howell",
+                "character": "Stormtrooper (uncredited)"
+            },
+            {
+                "name": "Tommy Ilsley",
+                "character": "Ponda Baba (uncredited)"
+            },
+            {
+                "name": "Joe Johnston",
+                "character": "Death Star Trooper (uncredited)"
+            },
+            {
+                "name": "Annette Jones",
+                "character": "Mosep (uncredited)"
+            },
+            {
+                "name": "Linda Jones",
+                "character": "Chall Bekan (uncredited)"
+            },
+            {
+                "name": "Joe Kaye",
+                "character": "Solomohal (uncredited)"
+            },
+            {
+                "name": "Colin Michael Kitchens",
+                "character": "Stormtrooper (voice) (uncredited)"
+            },
+            {
+                "name": "Melissa Kurtz",
+                "character": "Jawa (uncredited)"
+            },
+            {
+                "name": "Tiffany Hillkurtz",
+                "character": "Jawa (uncredited)"
+            },
+            {
+                "name": "Al Lampert",
+                "character": "Daine Jir (uncredited)"
+            },
+            {
+                "name": "Anthony Lang",
+                "character": "BoShek (uncredited)"
+            },
+            {
+                "name": "Laine Liska",
+                "character": "Muftak / Cantina Band Member (uncredited)"
+            },
+            {
+                "name": "Derek Lyons",
+                "character": "Temple Guard / Medal Bearer (uncredited)"
+            },
+            {
+                "name": "Mahjoub",
+                "character": "Jawa (uncredited)"
+            },
+            {
+                "name": "Alf Mangan",
+                "character": "Takeel (uncredited)"
+            },
+            {
+                "name": "Grant McCune",
+                "character": "Death Star Gunner (uncredited)"
+            },
+            {
+                "name": "Geoffrey Moon",
+                "character": "Cantina Patron (uncredited)"
+            },
+            {
+                "name": "Mandy Morton",
+                "character": "Swilla Corey (uncredited)"
+            },
+            {
+                "name": "Lorne Peterson",
+                "character": "Massassi Base Rebel Scout (uncredited)"
+            },
+            {
+                "name": "Marcus Powell",
+                "character": "Rycar Ryjerd (uncredited)"
+            },
+            {
+                "name": "Shane Rimmer",
+                "character": "InCom Engineer (uncredited)"
+            },
+            {
+                "name": "Pam Rose",
+                "character": "Leesub Sirln (uncredited)"
+            },
+            {
+                "name": "George Roubicek",
+                "character": "Cmdr. Praji (Imperial Officer #2 on rebel ship) (uncredited)"
+            },
+            {
+                "name": "Erica Simmons",
+                "character": "Tawss Khaa (uncredited)"
+            },
+            {
+                "name": "Angela Staines",
+                "character": "Senni Tonnika (uncredited)"
+            },
+            {
+                "name": "George Stock",
+                "character": "Cantina Patron (uncredited)"
+            },
+            {
+                "name": "Roy Straite",
+                "character": "Cantina Patron (uncredited)"
+            },
+            {
+                "name": "Peter Sturgeon",
+                "character": "Sai'torr Kal Fas (uncredited)"
+            },
+            {
+                "name": "Peter Sumner",
+                "character": "Lt. Pol Treidum (uncredited)"
+            },
+            {
+                "name": "John Sylla",
+                "character": "Cantina Voices (voice) (uncredited)"
+            },
+            {
+                "name": "Tom Sylla",
+                "character": "Massassi Outpost Announcer / Various Voices (voice) (uncredited)"
+            },
+            {
+                "name": "Malcolm Tierney",
+                "character": "Lt. Shann Childsen (uncredited)"
+            },
+            {
+                "name": "Phil Tippett",
+                "character": "Cantina Alien (uncredited)"
+            },
+            {
+                "name": "Burnell Tucker",
+                "character": "Del Goren (uncredited)"
+            },
+            {
+                "name": "Morgan Upton",
+                "character": "Stormtrooper (voice) (uncredited)"
+            },
+            {
+                "name": "Jerry Walter",
+                "character": "Stormtrooper (voice) (uncredited)"
+            },
+            {
+                "name": "Hal Wamsley",
+                "character": "Jawa (uncredited)"
+            },
+            {
+                "name": "Diana Sadley Way",
+                "character": "Thuku (uncredited)"
+            },
+            {
+                "name": "Bill Weston",
+                "character": "Stormtrooper (uncredited)"
+            },
+            {
+                "name": "Fred Wood",
+                "character": "Cantina Patron (uncredited)"
+            },
+            {
+                "name": "Colin Higgins",
+                "character": "Rebel Pilot, Col. Takbright (uncredited)"
+            },
+            {
+                "name": "Ron Tarr",
+                "character": "Jabba's Henchman (uncredited)"
+            },
+            {
+                "name": "Anthony Forrest",
+                "character": "Sandtrooper / Fixer (uncredited)"
+            },
+            {
+                "name": "Frances Alfred Basil Tomlin",
+                "character": "BoShek (uncredited)"
+            },
+            {
+                "name": "Larry Ward",
+                "character": "Greedo (voice) (uncredited)"
+            },
+            {
+                "name": "John Cannon",
+                "character": "Stormtrooper (uncredited)"
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "judul": "Finding Nemo",
+        "durasi": 100,
+        "rating": 7.825,
+        "tahunRilis": "2003",
+        "sutradara": "Andrew Stanton",
+        "link_cover": "/ggQ6o8X5984OCh3kZi2UIJQJY5y.jpg",
+        "genre": [
+            "Animation",
+            "Family"
+        ],
+        "sinopsis": "Nemo, an adventurous young clownfish, is unexpectedly taken from his Great Barrier Reef home to a dentist's office aquarium. It's up to his worrisome father Marlin and a friendly but forgetful fish Dory to bring Nemo home -- meeting vegetarian sharks, surfer dude turtles, hypnotic jellyfish, hungry seagulls, and more along the way.",
+        "pemeran": [
+            {
+                "name": "Albert Brooks",
+                "character": "Marlin (voice)"
+            },
+            {
+                "name": "Ellen DeGeneres",
+                "character": "Dory (voice)"
+            },
+            {
+                "name": "Alexander Gould",
+                "character": "Nemo (voice)"
+            },
+            {
+                "name": "Willem Dafoe",
+                "character": "Gill (voice)"
+            },
+            {
+                "name": "Geoffrey Rush",
+                "character": "Nigel (voice)"
+            },
+            {
+                "name": "Brad Garrett",
+                "character": "Bloat (voice)"
+            },
+            {
+                "name": "Allison Janney",
+                "character": "Peach (voice)"
+            },
+            {
+                "name": "Austin Pendleton",
+                "character": "Gurgle (voice)"
+            },
+            {
+                "name": "Stephen Root",
+                "character": "Bubbles (voice)"
+            },
+            {
+                "name": "Vicki Lewis",
+                "character": "Deb / Flo (voice)"
+            },
+            {
+                "name": "Joe Ranft",
+                "character": "Jacques (voice)"
+            },
+            {
+                "name": "Andrew Stanton",
+                "character": "Crush (voice)"
+            },
+            {
+                "name": "Elizabeth Perkins",
+                "character": "Coral (voice)"
+            },
+            {
+                "name": "Nicholas Bird",
+                "character": "Squirt (voice)"
+            },
+            {
+                "name": "Bob Peterson",
+                "character": "Mr. Ray / Additional Voices (voice)"
+            },
+            {
+                "name": "Barry Humphries",
+                "character": "Bruce (voice)"
+            },
+            {
+                "name": "Eric Bana",
+                "character": "Anchor (voice)"
+            },
+            {
+                "name": "Bruce Spence",
+                "character": "Chum (voice)"
+            },
+            {
+                "name": "Bill Hunter",
+                "character": "Dentist (voice)"
+            },
+            {
+                "name": "LuLu Ebeling",
+                "character": "Darla (voice)"
+            },
+            {
+                "name": "Jordan Ranft",
+                "character": "Tad (voice)"
+            },
+            {
+                "name": "Erica Beck",
+                "character": "Pearl (voice)"
+            },
+            {
+                "name": "Erik Per Sullivan",
+                "character": "Sheldon (voice)"
+            },
+            {
+                "name": "John Ratzenberger",
+                "character": "Fish School (voice)"
+            },
+            {
+                "name": "Carlos Alazraqui",
+                "character": "Additional Voices  (voice)"
+            },
+            {
+                "name": "Alec Medlock",
+                "character": "Additional Voices  (voice)"
+            },
+            {
+                "name": "Bob Bergen",
+                "character": "Additional Voices  (voice)"
+            },
+            {
+                "name": "Nicole Miller",
+                "character": "Additional Voices  (voice)"
+            },
+            {
+                "name": "Geoff Brooks",
+                "character": "Additional Voices  (voice)"
+            },
+            {
+                "name": "Lisa Peers",
+                "character": "Additional Voices  (voice)"
+            },
+            {
+                "name": "Paul Eiding",
+                "character": "Additional Voice  (voice)"
+            },
+            {
+                "name": "Phil Proctor",
+                "character": "Additional Voices  (voice)"
+            },
+            {
+                "name": "Leland Grossman",
+                "character": "Additional Voices  (voice)"
+            },
+            {
+                "name": "Daryl Sabara",
+                "character": "Additional Voices  (voice)"
+            },
+            {
+                "name": "Lili Ishida",
+                "character": "Additional Voices"
+            },
+            {
+                "name": "Emmett Shoemaker",
+                "character": "Additional Voices (voice)"
+            },
+            {
+                "name": "Oliver Kindred",
+                "character": "Additional Voices  (voice)"
+            },
+            {
+                "name": "Ben Stanton",
+                "character": "Additional Voices  (voice)"
+            },
+            {
+                "name": "Danny Mann",
+                "character": "Additional Voices  (voice)"
+            },
+            {
+                "name": "Kali Whitehurst",
+                "character": "Additional Voices  (voice)"
+            },
+            {
+                "name": "Rove McManus",
+                "character": "Additional Voices  (voice)"
+            },
+            {
+                "name": "James S. Baker",
+                "character": "Additional Voices  (voice)"
+            },
+            {
+                "name": "Vanessa Marano",
+                "character": "Additional Voices  (voice)"
+            },
+            {
+                "name": "Susan Blu",
+                "character": "Additional Voices  (voice)"
+            },
+            {
+                "name": "Annelise Nolting",
+                "character": "Additional Voices  (voice)"
+            },
+            {
+                "name": "Jeff Pidgeon",
+                "character": "Additional Voices  (voice)"
+            },
+            {
+                "name": "Jennifer Darling",
+                "character": "Additional Voices  (voice)"
+            },
+            {
+                "name": "Aaron Fors",
+                "character": "Additional Voices  (voice)"
+            },
+            {
+                "name": "Katherine Ringgold",
+                "character": "Additional Voices  (voice)"
+            },
+            {
+                "name": "Jess Harnell",
+                "character": "Additional Voices  (voice)"
+            },
+            {
+                "name": "David Ian Salter",
+                "character": "Additional Voices  (voice)"
+            },
+            {
+                "name": "Caroline Kindred",
+                "character": "Additional Voices  (voice)"
+            },
+            {
+                "name": "Sherry Lynn",
+                "character": "Additional Voices  (voice)"
+            },
+            {
+                "name": "Jim Ward",
+                "character": "Additional Voices  (voice)"
+            },
+            {
+                "name": "Mickie McGowan",
+                "character": "Additional Voices  (voice)"
+            },
+            {
+                "name": "Jack Angel",
+                "character": "Additional Voices  (voice)"
+            },
+            {
+                "name": "Laura Marano",
+                "character": "Additional Voices  (voice)"
+            },
+            {
+                "name": "Bobby Block",
+                "character": "Additional Voices  (voice)"
+            },
+            {
+                "name": "Laraine Newman",
+                "character": "Additional Voices  (voice)"
+            },
+            {
+                "name": "Jane Carr",
+                "character": "Additional Voices  (voice)"
+            },
+            {
+                "name": "Jessie Flower",
+                "character": "Additional Voices  (voice)"
+            },
+            {
+                "name": "Jan Rabson",
+                "character": "Additional Voices  (voice)"
+            },
+            {
+                "name": "Bradley Trevor Greive",
+                "character": "Additional Voices  (voice)"
+            },
+            {
+                "name": "Evan Sabara",
+                "character": "Additional Voices  (voice)"
+            },
+            {
+                "name": "Marc John Jefferies",
+                "character": "Additional Voices  (voice)"
+            },
+            {
+                "name": "Eliza Schneider",
+                "character": "Additional Voices  (voice)"
+            },
+            {
+                "name": "Lee Unkrich",
+                "character": "Additional Voices  (voice)"
+            },
+            {
+                "name": "Noah Luke",
+                "character": "Additional Voices  (voice)"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "judul": "Forrest Gump",
+        "durasi": 142,
+        "rating": 8.476,
+        "tahunRilis": "1994",
+        "sutradara": "Robert Zemeckis",
+        "link_cover": "/arw2vcBveWOVZr6pxd9XTd1TdQa.jpg",
+        "genre": [
+            "Comedy",
+            "Drama",
+            "Romance"
+        ],
+        "sinopsis": "A man with a low IQ has accomplished great things in his life and been present during significant historic events\u2014in each case, far exceeding what anyone imagined he could do. But despite all he has achieved, his one true love eludes him.",
+        "pemeran": [
+            {
+                "name": "Tom Hanks",
+                "character": "Forrest Gump"
+            },
+            {
+                "name": "Robin Wright",
+                "character": "Jenny Curran"
+            },
+            {
+                "name": "Gary Sinise",
+                "character": "Lieutenant Dan Taylor"
+            },
+            {
+                "name": "Sally Field",
+                "character": "Mrs. Gump"
+            },
+            {
+                "name": "Mykelti Williamson",
+                "character": "Benjamin Buford 'Bubba' Blue"
+            },
+            {
+                "name": "Michael Conner Humphreys",
+                "character": "Young Forrest Gump"
+            },
+            {
+                "name": "Hanna Hall",
+                "character": "Young Jenny Curran"
+            },
+            {
+                "name": "Haley Joel Osment",
+                "character": "Forrest Junior"
+            },
+            {
+                "name": "Siobhan Fallon Hogan",
+                "character": "School Bus Driver"
+            },
+            {
+                "name": "Rebecca Williams",
+                "character": "Nurse at Park Bench"
+            },
+            {
+                "name": "Bob Penny",
+                "character": "Crony"
+            },
+            {
+                "name": "Harold G. Herthum",
+                "character": "Doctor"
+            },
+            {
+                "name": "George Kelly",
+                "character": "Barber"
+            },
+            {
+                "name": "John Randall",
+                "character": "Crony"
+            },
+            {
+                "name": "Sam Anderson",
+                "character": "Principal Hancock"
+            },
+            {
+                "name": "Margo Moorer",
+                "character": "Louise"
+            },
+            {
+                "name": "Ione M. Telech",
+                "character": "Elderly Woman"
+            },
+            {
+                "name": "Christine Seabrook",
+                "character": "Elderly Woman's Daughter"
+            },
+            {
+                "name": "John Worsham",
+                "character": "Southern Gentleman / Landowner"
+            },
+            {
+                "name": "Peter Dobson",
+                "character": "Young Elvis Presley"
+            },
+            {
+                "name": "Alexander Zemeckis",
+                "character": "School Bus Boy"
+            },
+            {
+                "name": "Logan Livingston Gomez",
+                "character": "School Bus Boy"
+            },
+            {
+                "name": "Ben Waddel",
+                "character": "School Bus Boy"
+            },
+            {
+                "name": "Elizabeth Hanks",
+                "character": "School Bus Girl"
+            },
+            {
+                "name": "Tyler Long",
+                "character": "Red Headed Boy"
+            },
+            {
+                "name": "Christopher Jones",
+                "character": "Boy with Cross"
+            },
+            {
+                "name": "Grady Bowman",
+                "character": "Fat Boy"
+            },
+            {
+                "name": "Kevin Mangan",
+                "character": "Jenny's Father"
+            },
+            {
+                "name": "Fay Genens",
+                "character": "Jenny's Grandmother"
+            },
+            {
+                "name": "Frank Geyer",
+                "character": "Police Chief"
+            },
+            {
+                "name": "Rob Landry",
+                "character": "Red Headed Teen"
+            },
+            {
+                "name": "Jason McGuire",
+                "character": "Fat Teen"
+            },
+            {
+                "name": "Pete Auster",
+                "character": "Teen with Cross"
+            },
+            {
+                "name": "Sonny Shroyer",
+                "character": "College Football Coach"
+            },
+            {
+                "name": "Brett Rice",
+                "character": "High School Football Coach"
+            },
+            {
+                "name": "Ed Davis",
+                "character": "High School Football Coach"
+            },
+            {
+                "name": "Daniel C. Striepeke",
+                "character": "Recruiter"
+            },
+            {
+                "name": "Bruce Lucvia",
+                "character": "Kick Off Return Player"
+            },
+            {
+                "name": "David Brisbin",
+                "character": "Newscaster"
+            },
+            {
+                "name": "Kirk Ward",
+                "character": "Earl"
+            },
+            {
+                "name": "Angela Lomas",
+                "character": "Black Student"
+            },
+            {
+                "name": "Timothy Record",
+                "character": "Black Student"
+            },
+            {
+                "name": "Deborah McTeer",
+                "character": "Woman with Child on Park Bench"
+            },
+            {
+                "name": "Mark Matheisen",
+                "character": "Jenny's Date"
+            },
+            {
+                "name": "Al Harrington",
+                "character": "Local Anchor #1"
+            },
+            {
+                "name": "Jed Gillin",
+                "character": "President John F. Kennedy (voice)"
+            },
+            {
+                "name": "Bob Harks",
+                "character": "University Dean"
+            },
+            {
+                "name": "Don Fischer",
+                "character": "Army Recruiter"
+            },
+            {
+                "name": "Kenneth Bevington",
+                "character": "Army Bus Driver"
+            },
+            {
+                "name": "Michael Flannery",
+                "character": "Bus Recruit"
+            },
+            {
+                "name": "Gary Robinson",
+                "character": "Bus Recruit"
+            },
+            {
+                "name": "Marlena Smalls",
+                "character": "Bubba's Mother"
+            },
+            {
+                "name": "Kitty K. Green",
+                "character": "Bubba's Great Grandmother"
+            },
+            {
+                "name": "Afemo Omilami",
+                "character": "Drill Sergeant"
+            },
+            {
+                "name": "Matt Wallace",
+                "character": "Barracks Recruit"
+            },
+            {
+                "name": "Dant\u00e9 McCarthy",
+                "character": "Topless Girl"
+            },
+            {
+                "name": "Paulie DiCocco",
+                "character": "Emcee"
+            },
+            {
+                "name": "Mike Jolly",
+                "character": "Club Patron"
+            },
+            {
+                "name": "Michael Kemmerling",
+                "character": "Club Patron"
+            },
+            {
+                "name": "John Voldstad",
+                "character": "Club Patron"
+            },
+            {
+                "name": "Jeffrey Winner",
+                "character": "Club Patron"
+            },
+            {
+                "name": "Russ Wilson",
+                "character": "Pick-up Truck Driver"
+            },
+            {
+                "name": "Daniel J. Gillooly",
+                "character": "Helicopter Gunman"
+            },
+            {
+                "name": "Calvin Gadsden",
+                "character": "Sargeant Sims"
+            },
+            {
+                "name": "Aaron Izbicki",
+                "character": "Dallas"
+            },
+            {
+                "name": "Michael Burgess",
+                "character": "Cleveland"
+            },
+            {
+                "name": "Steven Griffith",
+                "character": "Tex"
+            },
+            {
+                "name": "Bill Roberson",
+                "character": "Fat Man at Bench"
+            },
+            {
+                "name": "Michael McFall",
+                "character": "Army Hospital Male Nurse"
+            },
+            {
+                "name": "Eric Underwood",
+                "character": "Mail Call Soldier"
+            },
+            {
+                "name": "Steve DeRelian",
+                "character": "Wounded Soldier"
+            },
+            {
+                "name": "Byron Minns",
+                "character": "Wounded Soldier"
+            },
+            {
+                "name": "Stephen Bridgewater",
+                "character": "Hospital Officer"
+            },
+            {
+                "name": "Bonnie Ann Burgess",
+                "character": "Army Nurse"
+            },
+            {
+                "name": "Scott Oliver",
+                "character": "National Correspondent #1"
+            },
+            {
+                "name": "John William Galt",
+                "character": "President Johnson (voice)"
+            },
+            {
+                "name": "Hilary Chaplain",
+                "character": "Hilary"
+            },
+            {
+                "name": "Isabel Rose",
+                "character": "Isabel"
+            },
+            {
+                "name": "Jay Ross",
+                "character": "Veteran at War Rally"
+            },
+            {
+                "name": "Richard D'Alessandro",
+                "character": "Abbie Hoffman"
+            },
+            {
+                "name": "Dick Stilwell",
+                "character": "Policeman at War Rally"
+            },
+            {
+                "name": "Kevin Davis",
+                "character": "Black Panther"
+            },
+            {
+                "name": "Michael Jace",
+                "character": "Black Panther"
+            },
+            {
+                "name": "Geoffrey Blake",
+                "character": "Wesley"
+            },
+            {
+                "name": "Tim Perry",
+                "character": "Hippie at Commune"
+            },
+            {
+                "name": "Vanessa Roth",
+                "character": "Hollywood Boulevard Girlfriend"
+            },
+            {
+                "name": "Emily Carey",
+                "character": "Hollywood Boulevard Girlfriend"
+            },
+            {
+                "name": "Paul Raczkowski",
+                "character": "Man in VW Bug"
+            },
+            {
+                "name": "Valentine",
+                "character": "Chinese Ping Pong Player"
+            },
+            {
+                "name": "Dick Cavett",
+                "character": "Dick Cavett"
+            },
+            {
+                "name": "Joe Stefanelli",
+                "character": "John Lennon (voice)"
+            },
+            {
+                "name": "Tiffany Salerno",
+                "character": "Carla"
+            },
+            {
+                "name": "Marla Sucharetza",
+                "character": "Lenore"
+            },
+            {
+                "name": "Aloysius Gigl",
+                "character": "Musician Boyfriend"
+            },
+            {
+                "name": "Jack Bowden",
+                "character": "National Correspondent #4"
+            },
+            {
+                "name": "Joe Alaskey",
+                "character": "President Nixon (voice)"
+            },
+            {
+                "name": "Lazarus Jackson",
+                "character": "Discharge Officer"
+            },
+            {
+                "name": "W. Benson Terry",
+                "character": "Stanley Loomis"
+            },
+            {
+                "name": "Matt Rebenkoff",
+                "character": "Drugged Out Boyfriend"
+            },
+            {
+                "name": "Peter Bannon",
+                "character": "Local Correspondent #2"
+            },
+            {
+                "name": "Joe Washington",
+                "character": "Local Anchor #2"
+            },
+            {
+                "name": "Nora Dunfee",
+                "character": "Elderly Southern Woman"
+            },
+            {
+                "name": "Natalie Hendrix Tate",
+                "character": "Local Anchor #3"
+            },
+            {
+                "name": "Hallie D'Amore",
+                "character": "Waitress in Cafe"
+            },
+            {
+                "name": "Jim Hanks",
+                "character": "Forrest Gump Running Double"
+            },
+            {
+                "name": "Chiffonye Cobb",
+                "character": "Hannibal Reporter"
+            },
+            {
+                "name": "Juan Singleton",
+                "character": "Hannibal Reporter"
+            },
+            {
+                "name": "Bobby Richardson",
+                "character": "Hannibal Reporter"
+            },
+            {
+                "name": "Michael Mattison",
+                "character": "Taxi Driver"
+            },
+            {
+                "name": "Lenny Herb",
+                "character": "Young Man Running"
+            },
+            {
+                "name": "Charles Boswell",
+                "character": "Aging Hippie"
+            },
+            {
+                "name": "Timothy McNeil",
+                "character": "Wild Eyed Man"
+            },
+            {
+                "name": "Lonnie Hamilton",
+                "character": "The Minister"
+            },
+            {
+                "name": "Teresa Denton",
+                "character": "Lieutenant Dan's Fianc\u00e9e, Susan"
+            },
+            {
+                "name": "Kurt Russell",
+                "character": "Elvis Presley (voice) (uncredited)"
+            },
+            {
+                "name": "Mary Ellen Trainor",
+                "character": "Jenny's Babysitter (uncredited)"
+            },
+            {
+                "name": "Robb Skyler",
+                "character": "Nicholas Katzenbach (uncredited)"
+            },
+            {
+                "name": "Michael J. Oliver",
+                "character": "Red Headed Teen (uncredited)"
+            },
+            {
+                "name": "Bryan Hanna",
+                "character": "Football Coach (uncredited)"
+            },
+            {
+                "name": "Greg Brown",
+                "character": "Football Player (uncredited)"
+            },
+            {
+                "name": "Brendan Shanahan",
+                "character": "Football Player (uncredited)"
+            },
+            {
+                "name": "Troy Christian",
+                "character": "Cheerleader (uncredited)"
+            },
+            {
+                "name": "Jacqueline Lovell",
+                "character": "Football Fan (uncredited)"
+            },
+            {
+                "name": "Zach Hanner",
+                "character": "Barracks Recruit (uncredited)"
+            },
+            {
+                "name": "Aaron Michael Lacey",
+                "character": "National Guardsman (uncredited)"
+            },
+            {
+                "name": "William Shipman",
+                "character": "Black Panther (uncredited)"
+            },
+            {
+                "name": "Bob Hope",
+                "character": "Self - in Vietnam (archive footage) (uncredited)"
+            }
+        ]
+    },
+    {
+        "id": 58,
+        "judul": "Pirates of the Caribbean: Dead Man's Chest",
+        "durasi": 151,
+        "rating": 7.347,
+        "tahunRilis": "2006",
+        "sutradara": "Gore Verbinski",
+        "link_cover": "/uXEqmloGyP7UXAiphJUu2v2pcuE.jpg",
+        "genre": [
+            "Adventure",
+            "Fantasy",
+            "Action"
+        ],
+        "sinopsis": "Captain Jack Sparrow works his way out of a blood debt with the ghostly Davy Jones to avoid eternal damnation.",
+        "pemeran": [
+            {
+                "name": "Johnny Depp",
+                "character": "Jack Sparrow"
+            },
+            {
+                "name": "Orlando Bloom",
+                "character": "Will Turner"
+            },
+            {
+                "name": "Keira Knightley",
+                "character": "Elizabeth Swann"
+            },
+            {
+                "name": "Stellan Skarsg\u00e5rd",
+                "character": "William \"Bootstrap Bill\" Turner"
+            },
+            {
+                "name": "Bill Nighy",
+                "character": "Davy Jones"
+            },
+            {
+                "name": "Jack Davenport",
+                "character": "James Norrington"
+            },
+            {
+                "name": "Kevin McNally",
+                "character": "Joshamee Gibbs"
+            },
+            {
+                "name": "Jonathan Pryce",
+                "character": "Weatherby Swann"
+            },
+            {
+                "name": "Lee Arenberg",
+                "character": "Pintel"
+            },
+            {
+                "name": "Mackenzie Crook",
+                "character": "Ragetti"
+            },
+            {
+                "name": "Tom Hollander",
+                "character": "Cutler Beckett"
+            },
+            {
+                "name": "Naomie Harris",
+                "character": "Tia Dalma"
+            },
+            {
+                "name": "David Bailie",
+                "character": "Cotton"
+            },
+            {
+                "name": "Martin Klebba",
+                "character": "Marty"
+            },
+            {
+                "name": "David Schofield",
+                "character": "Ian Mercer"
+            },
+            {
+                "name": "Alex Norton",
+                "character": "Bellamy"
+            },
+            {
+                "name": "Dermot Keaney",
+                "character": "Maccus"
+            },
+            {
+                "name": "Andy Beckwith",
+                "character": "Clanker"
+            },
+            {
+                "name": "Clive Ashborn",
+                "character": "Koleniko"
+            },
+            {
+                "name": "Reggie Lee",
+                "character": "Headless"
+            },
+            {
+                "name": "Christopher Adamson",
+                "character": "Jimmy Legs"
+            },
+            {
+                "name": "Jonathan Linsley",
+                "character": "Ogilvey (uncredited)"
+            },
+            {
+                "name": "John Boswall",
+                "character": "Burser (uncredited)"
+            },
+            {
+                "name": "Max Baker",
+                "character": "Burser - Edinburgh (uncredited)"
+            },
+            {
+                "name": "Steve Speirs",
+                "character": "Quartermaster - Edinburgh (uncredited)"
+            },
+            {
+                "name": "Lauren Maher",
+                "character": "Scarlet (uncredited)"
+            },
+            {
+                "name": "Vanessa Branch",
+                "character": "Giselle (uncredited)"
+            },
+            {
+                "name": "Luke de Woolfson",
+                "character": "Frightened Sailor (uncredited)"
+            },
+            {
+                "name": "Jonathan Kite",
+                "character": "Black Pearl Pirate (uncredited)"
+            },
+            {
+                "name": "Ho-Kwan Tse",
+                "character": "Ho-Kwan (uncredited)"
+            },
+            {
+                "name": "Peter Donald Badalamenti II",
+                "character": "Penrod (uncredited)"
+            },
+            {
+                "name": "Christopher S. Capp",
+                "character": "Cotton's Parrot (voice) (uncredited)"
+            },
+            {
+                "name": "Donald Dowd",
+                "character": "Swamp Dweller (uncredited)"
+            },
+            {
+                "name": "Barry McEvoy",
+                "character": "Carruthers' Guard (uncredited)"
+            },
+            {
+                "name": "Claudia Adams",
+                "character": "(uncredited)"
+            },
+            {
+                "name": "Filip Cvijetic",
+                "character": "A tree seen in the movie"
+            },
+            {
+                "name": "Michael Enright",
+                "character": "Deckhand - Edinburgh"
+            },
+            {
+                "name": "Geoffrey Rush",
+                "character": "Hector Barbossa"
+            }
+        ]
+    },
+    {
+        "id": 59,
+        "judul": "A History of Violence",
+        "durasi": 96,
+        "rating": 7.2,
+        "tahunRilis": "2005",
+        "sutradara": "David Cronenberg",
+        "link_cover": "/rrc6GiAKHDrUjp8OmdVng9hRWBn.jpg",
+        "genre": [
+            "Drama",
+            "Thriller",
+            "Crime"
+        ],
+        "sinopsis": "An average family is thrust into the spotlight after the father commits a seemingly self-defense murder at his diner.",
+        "pemeran": [
+            {
+                "name": "Viggo Mortensen",
+                "character": "Tom Stall / Joey Cusack"
+            },
+            {
+                "name": "Maria Bello",
+                "character": "Edie Stall"
+            },
+            {
+                "name": "Ed Harris",
+                "character": "Carl Fogarty"
+            },
+            {
+                "name": "William Hurt",
+                "character": "Richie Cusack"
+            },
+            {
+                "name": "Ashton Holmes",
+                "character": "Jack Stall"
+            },
+            {
+                "name": "Peter MacNeill",
+                "character": "Sheriff Sam Carney"
+            },
+            {
+                "name": "Stephen McHattie",
+                "character": "Leland"
+            },
+            {
+                "name": "Greg Bryk",
+                "character": "Billy"
+            },
+            {
+                "name": "Kyle Schmid",
+                "character": "Bobby"
+            },
+            {
+                "name": "Sumela Kay",
+                "character": "Judy Danvers"
+            },
+            {
+                "name": "Gerry Quigley",
+                "character": "Mick"
+            },
+            {
+                "name": "Deborah Drakeford",
+                "character": "Charlotte"
+            },
+            {
+                "name": "Heidi Hayes",
+                "character": "Sarah Stall"
+            },
+            {
+                "name": "Aidan Devine",
+                "character": "Charlie Roarke"
+            },
+            {
+                "name": "Bill MacDonald",
+                "character": "Frank Mulligan"
+            },
+            {
+                "name": "Michelle McCree",
+                "character": "Jenny Wyeth"
+            },
+            {
+                "name": "Ian Matthews",
+                "character": "Ruben"
+            },
+            {
+                "name": "R.D. Reid",
+                "character": "Pat"
+            },
+            {
+                "name": "Morgan Kelly",
+                "character": "Bobby's Buddy"
+            },
+            {
+                "name": "Martha Reilly",
+                "character": "Shoe Saleswoman"
+            },
+            {
+                "name": "Jason Barbeck",
+                "character": "Richie's Thug"
+            },
+            {
+                "name": "Bruce Beaton",
+                "character": "Richie's Thug"
+            },
+            {
+                "name": "Neven Pajkic",
+                "character": "Richie's Thug"
+            },
+            {
+                "name": "Brendan Connor",
+                "character": "Local TV Reporter"
+            },
+            {
+                "name": "Nick Antonacci",
+                "character": "Local TV Reporter"
+            },
+            {
+                "name": "John Watson",
+                "character": "Baseball Coach"
+            },
+            {
+                "name": "Don Allison",
+                "character": "TV Broadcaster"
+            },
+            {
+                "name": "Brittany Payer",
+                "character": "Motel Girl"
+            },
+            {
+                "name": "Mitch Boughs",
+                "character": "Kid in Diner"
+            },
+            {
+                "name": "April Mullen",
+                "character": "Kid in Diner"
+            },
+            {
+                "name": "George King",
+                "character": "Hospital Well-Wisher"
+            },
+            {
+                "name": "Shawn Campbell",
+                "character": "Orderly"
+            }
+        ]
+    },
+    {
+        "id": 62,
+        "judul": "2001: A Space Odyssey",
+        "durasi": 149,
+        "rating": 8.079,
+        "tahunRilis": "1968",
+        "sutradara": "Stanley Kubrick",
+        "link_cover": "/ve72VxNqjGM69Uky4WTo2bK6rfq.jpg",
+        "genre": [
+            "Science Fiction",
+            "Mystery",
+            "Adventure"
+        ],
+        "sinopsis": "Humanity finds a mysterious object buried beneath the lunar surface and sets off to find its origins with the help of HAL 9000, the world's most advanced super computer.",
+        "pemeran": [
+            {
+                "name": "Keir Dullea",
+                "character": "Dr. David Bowman"
+            },
+            {
+                "name": "Gary Lockwood",
+                "character": "Dr. Frank Poole"
+            },
+            {
+                "name": "William Sylvester",
+                "character": "Dr. Heywood Floyd"
+            },
+            {
+                "name": "Douglas Rain",
+                "character": "HAL 9000 (voice)"
+            },
+            {
+                "name": "Daniel Richter",
+                "character": "Moonwatcher"
+            },
+            {
+                "name": "Leonard Rossiter",
+                "character": "Dr. Andrei Smyslov"
+            },
+            {
+                "name": "Margaret Tyzack",
+                "character": "Elena"
+            },
+            {
+                "name": "Robert Beatty",
+                "character": "Dr. Ralph Halvorsen"
+            },
+            {
+                "name": "Sean Sullivan",
+                "character": "Dr. Roy Michaels"
+            },
+            {
+                "name": "Frank Miller",
+                "character": "Mission Controller"
+            },
+            {
+                "name": "Ed Bishop",
+                "character": "Aries-1B Lunar Shuttle Captain"
+            },
+            {
+                "name": "Edwina Carroll",
+                "character": "Aries-1B Stewardess"
+            },
+            {
+                "name": "Heather Downham",
+                "character": "Stewardess"
+            },
+            {
+                "name": "Penny Brahms",
+                "character": "Stewardess"
+            },
+            {
+                "name": "Maggie London",
+                "character": "Stewardess"
+            },
+            {
+                "name": "Chela Matthison",
+                "character": "Stewardess"
+            },
+            {
+                "name": "Judy Kiern",
+                "character": "Voiceprint Identification Girl"
+            },
+            {
+                "name": "Alan Gifford",
+                "character": "Poole's Father"
+            },
+            {
+                "name": "Ann Gillis",
+                "character": "Poole's Mother"
+            },
+            {
+                "name": "Vivian Kubrick",
+                "character": "Floyd's daughter (uncredited)"
+            },
+            {
+                "name": "Kenneth Kendall",
+                "character": "BBC-12 Announcer"
+            },
+            {
+                "name": "Kevin Scott",
+                "character": "Miller"
+            },
+            {
+                "name": "Martin Amor",
+                "character": "Interviewer Martin Amor"
+            },
+            {
+                "name": "Bill Weston",
+                "character": "Astronaut"
+            },
+            {
+                "name": "Glenn Beck",
+                "character": "Astronaut"
+            },
+            {
+                "name": "Mike Lovell",
+                "character": "Astronaut"
+            },
+            {
+                "name": "John Ashley",
+                "character": "Ape"
+            },
+            {
+                "name": "Jimmy Bell",
+                "character": "Ape"
+            },
+            {
+                "name": "David Charkham",
+                "character": "Ape"
+            },
+            {
+                "name": "Simon Davis",
+                "character": "Ape"
+            },
+            {
+                "name": "Jonathan Daw",
+                "character": "Ape"
+            },
+            {
+                "name": "P\u00e9ter Delm\u00e1r",
+                "character": "Ape"
+            },
+            {
+                "name": "Terry Duggan",
+                "character": "Ape Attacked by Leopard"
+            },
+            {
+                "name": "David Fleetwood",
+                "character": "Ape"
+            },
+            {
+                "name": "Danny Grover",
+                "character": "Ape"
+            },
+            {
+                "name": "Brian Hawley",
+                "character": "Ape"
+            },
+            {
+                "name": "David Hines",
+                "character": "Ape"
+            },
+            {
+                "name": "Tony Jackson",
+                "character": "Ape"
+            },
+            {
+                "name": "John Jordan",
+                "character": "Ape"
+            },
+            {
+                "name": "Scott MacKee",
+                "character": "Ape"
+            },
+            {
+                "name": "Laurence Marchant",
+                "character": "Ape"
+            },
+            {
+                "name": "Darryl Paes",
+                "character": "Ape"
+            },
+            {
+                "name": "Joe Refalo",
+                "character": "Ape"
+            },
+            {
+                "name": "Andy Wallace",
+                "character": "Ape"
+            },
+            {
+                "name": "Bob Wilyman",
+                "character": "Ape"
+            },
+            {
+                "name": "Richard Woods",
+                "character": "Ape Killed by Moon-Watcher"
+            },
+            {
+                "name": "S. Newton Anderson",
+                "character": "Young Man (uncredited)"
+            },
+            {
+                "name": "Sheraton Blount",
+                "character": "(uncredited)"
+            },
+            {
+                "name": "Ann Bormann",
+                "character": "(uncredited)"
+            },
+            {
+                "name": "Julie Croft",
+                "character": "(uncredited)"
+            },
+            {
+                "name": "Penny Francis",
+                "character": "(uncredited)"
+            },
+            {
+                "name": "Marcella Markham",
+                "character": "(uncredited)"
+            },
+            {
+                "name": "Irena Marr",
+                "character": "Russian Scientist (uncredited)"
+            },
+            {
+                "name": "Krystyna Marr",
+                "character": "Russian Scientist (uncredited)"
+            },
+            {
+                "name": "Kim Neil",
+                "character": "(uncredited)"
+            },
+            {
+                "name": "Jane Pearl",
+                "character": "(uncredited)"
+            },
+            {
+                "name": "Penny Pearl",
+                "character": "(uncredited)"
+            },
+            {
+                "name": "Burnell Tucker",
+                "character": "TMA-1 Site Photographer (uncredited)"
+            },
+            {
+                "name": "John Swindells",
+                "character": "TMA-1 Site Technician #1 (uncredited)"
+            },
+            {
+                "name": "John Clifford",
+                "character": "TMA-1 Site Technician #2 (uncredited)"
+            },
+            {
+                "name": "Stanley Kubrick",
+                "character": "(voice) (uncredited)"
+            },
+            {
+                "name": "Anthony Jackson",
+                "character": "Ape"
+            }
+        ]
+    },
+    {
+        "id": 63,
+        "judul": "Twelve Monkeys",
+        "durasi": 129,
+        "rating": 7.6,
+        "tahunRilis": "1995",
+        "sutradara": "Terry Gilliam",
+        "link_cover": "/gt3iyguaCIw8DpQZI1LIN5TohM2.jpg",
+        "genre": [
+            "Science Fiction",
+            "Thriller",
+            "Mystery"
+        ],
+        "sinopsis": "In the year 2035, convict James Cole reluctantly volunteers to be sent back in time to discover the origin of a deadly virus that wiped out nearly all of the earth's population and forced the survivors into underground communities. But when Cole is mistakenly sent to 1990 instead of 1996, he's arrested and locked up in a mental hospital. There he meets psychiatrist Dr. Kathryn Railly, and patient Jeffrey Goines, the son of a famous virus expert, who may hold the key to the mysterious rogue group, the Army of the 12 Monkeys, thought to be responsible for unleashing the killer disease.",
+        "pemeran": [
+            {
+                "name": "Bruce Willis",
+                "character": "James Cole"
+            },
+            {
+                "name": "Madeleine Stowe",
+                "character": "Dr. Kathryn Railly"
+            },
+            {
+                "name": "Brad Pitt",
+                "character": "Jeffrey Goines"
+            },
+            {
+                "name": "Christopher Plummer",
+                "character": "Dr. Goines"
+            },
+            {
+                "name": "David Morse",
+                "character": "Dr. Peters"
+            },
+            {
+                "name": "Jon Seda",
+                "character": "Jose"
+            },
+            {
+                "name": "Christopher Meloni",
+                "character": "Lt. Halperin"
+            },
+            {
+                "name": "Joey Perillo",
+                "character": "Detective Franki"
+            },
+            {
+                "name": "LisaGay Hamilton",
+                "character": "Teddy"
+            },
+            {
+                "name": "Matt Ross",
+                "character": "Bee"
+            },
+            {
+                "name": "Annie Golden",
+                "character": "Woman Cabbie"
+            },
+            {
+                "name": "Michael Chance",
+                "character": "Scarface"
+            },
+            {
+                "name": "H. Michael Walls",
+                "character": "Botanist"
+            },
+            {
+                "name": "Bob Adrian",
+                "character": "Geologist"
+            },
+            {
+                "name": "Bill Raymond",
+                "character": "Microbiologist"
+            },
+            {
+                "name": "Ernest Abuba",
+                "character": "Engineer"
+            },
+            {
+                "name": "Nell Johnson",
+                "character": "Ward Nurse"
+            },
+            {
+                "name": "Rozwill Young",
+                "character": "Billings"
+            },
+            {
+                "name": "Joseph Melito",
+                "character": "Young Cole"
+            },
+            {
+                "name": "Frank Gorshin",
+                "character": "Dr. Fletcher"
+            },
+            {
+                "name": "Aaron Michael Lacey",
+                "character": "WWI Sergeant"
+            },
+            {
+                "name": "Vernon Campbell",
+                "character": "Tiny"
+            },
+            {
+                "name": "Simon Jones",
+                "character": "Zoologist"
+            },
+            {
+                "name": "Carol Florence",
+                "character": "Astrophysicist / Jones"
+            },
+            {
+                "name": "Irma St. Paule",
+                "character": "Poet"
+            },
+            {
+                "name": "Frederick Strother",
+                "character": "L.J. Washington"
+            },
+            {
+                "name": "Charles Techman",
+                "character": "Professor"
+            },
+            {
+                "name": "Rick Warner",
+                "character": "Dr. Casey"
+            },
+            {
+                "name": "Anthony 'Chip' Brienza",
+                "character": "Dr. Goodin"
+            },
+            {
+                "name": "Bruce Kirkpatrick",
+                "character": "Policeman No. 1"
+            },
+            {
+                "name": "Wilfred Williams",
+                "character": "Policeman No. 2"
+            },
+            {
+                "name": "Joilet Harris",
+                "character": "Harassed Mother"
+            },
+            {
+                "name": "Drucie McDaniel",
+                "character": "Waltzing Woman Patient"
+            },
+            {
+                "name": "John Blaisse",
+                "character": "Old Man Patient"
+            },
+            {
+                "name": "Louis Lippa",
+                "character": "Patient at Gate"
+            },
+            {
+                "name": "Stan Kang",
+                "character": "X-Ray Doctor"
+            },
+            {
+                "name": "Pat Dias",
+                "character": "WWI Captain"
+            },
+            {
+                "name": "Felix Pire",
+                "character": "Fale"
+            },
+            {
+                "name": "Karl Warren",
+                "character": "Pompous Man"
+            },
+            {
+                "name": "Joseph McKenna",
+                "character": "Wallace"
+            },
+            {
+                "name": "Stephen Bridgewater",
+                "character": "Airport Detective"
+            },
+            {
+                "name": "Ray Huffman",
+                "character": "Plump Businessman"
+            },
+            {
+                "name": "Charley Scalies",
+                "character": "Impatient Traveler"
+            },
+            {
+                "name": "Paul Meshejian",
+                "character": "Detective Dalva"
+            },
+            {
+                "name": "Kevin Thigpen",
+                "character": "Kweskin"
+            },
+            {
+                "name": "Jann Ellis",
+                "character": "Marilou"
+            },
+            {
+                "name": "Michael Ryan Segal",
+                "character": "Weller"
+            },
+            {
+                "name": "Korchenko",
+                "character": "Thug No. 1"
+            },
+            {
+                "name": "Robert O'Neill",
+                "character": "Wayne"
+            },
+            {
+                "name": "Harry O'Toole",
+                "character": "Louie / Raspy Voice"
+            },
+            {
+                "name": "Chuck Jeffreys",
+                "character": "Thug No. 2"
+            },
+            {
+                "name": "Barry Price",
+                "character": "Agent No. 1"
+            },
+            {
+                "name": "John Panzarella",
+                "character": "Agent No. 2"
+            },
+            {
+                "name": "Janet Zappala",
+                "character": "Anchorwoman"
+            },
+            {
+                "name": "Lisa Talerico",
+                "character": "Ticket Agent"
+            },
+            {
+                "name": "Tiffany Baldwin",
+                "character": "Student in Airport (uncredited)"
+            },
+            {
+                "name": "C.J. Byrnes",
+                "character": "Psychiatric Patient (uncredited)"
+            },
+            {
+                "name": "Tom Detrik",
+                "character": "FBI Agent (uncredited)"
+            },
+            {
+                "name": "Joe Gerety",
+                "character": "Sprayer (uncredited)"
+            },
+            {
+                "name": "Bonnie Loev",
+                "character": "Time Portal Nurse (uncredited)"
+            },
+            {
+                "name": "Raymond Mamrak",
+                "character": "Travler (uncredited)"
+            },
+            {
+                "name": "Allelon Ruggiero",
+                "character": "Inpatient (uncredited)"
+            },
+            {
+                "name": "Thang",
+                "character": "Monkey Member (uncredited)"
+            },
+            {
+                "name": "Sal Mazzotta",
+                "character": "Prisoner Joey (uncredited)"
+            },
+            {
+                "name": "Bart The Bear",
+                "character": "Bear"
+            }
+        ]
+    },
+    {
+        "id": 466420,
+        "judul": "Killers of the Flower Moon",
+        "durasi": 206,
+        "rating": 7.713,
+        "tahunRilis": "2023",
+        "sutradara": "Martin Scorsese",
+        "link_cover": "/dB6Krk806zeqd0YNp2ngQ9zXteH.jpg",
+        "genre": [
+            "Crime",
+            "Drama",
+            "History"
+        ],
+        "sinopsis": "When oil is discovered in 1920s Oklahoma under Osage Nation land, the Osage people are murdered one by one\u2014until the FBI steps in to unravel the mystery.",
+        "pemeran": [
+            {
+                "name": "Leonardo DiCaprio",
+                "character": "Ernest Burkhart"
+            },
+            {
+                "name": "Lily Gladstone",
+                "character": "Mollie Burkhart"
+            },
+            {
+                "name": "Robert De Niro",
+                "character": "William King Hale"
+            },
+            {
+                "name": "Jesse Plemons",
+                "character": "Tom White"
+            },
+            {
+                "name": "Tantoo Cardinal",
+                "character": "Lizzie Q"
+            },
+            {
+                "name": "Scott Shepherd",
+                "character": "Byron Burkhart"
+            },
+            {
+                "name": "Jason Isbell",
+                "character": "Bill Smith"
+            },
+            {
+                "name": "William Belleau",
+                "character": "Henry Roan"
+            },
+            {
+                "name": "Cara Jade Myers",
+                "character": "Anna"
+            },
+            {
+                "name": "John Lithgow",
+                "character": "Prosecutor Peter Leaward"
+            },
+            {
+                "name": "Brendan Fraser",
+                "character": "W.S. Hamilton"
+            },
+            {
+                "name": "JaNae Collins",
+                "character": "Reta"
+            },
+            {
+                "name": "Jillian Dion",
+                "character": "Minnie"
+            },
+            {
+                "name": "Louis Cancelmi",
+                "character": "Kelsie Morrison"
+            },
+            {
+                "name": "Tommy Schultz",
+                "character": "Blackie Thompson"
+            },
+            {
+                "name": "Everett Waller",
+                "character": "Paul Red Eagle"
+            },
+            {
+                "name": "Tahlee Redcorn",
+                "character": "Non-Hon-Zhin-Ga / Traditional Leader"
+            },
+            {
+                "name": "Yancey Red Corn",
+                "character": "Chief Bonnicastle"
+            },
+            {
+                "name": "Tatanka Means",
+                "character": "John Wren"
+            },
+            {
+                "name": "Sturgill Simpson",
+                "character": "Henry Grammer"
+            },
+            {
+                "name": "Ty Mitchell",
+                "character": "John Ramsey"
+            },
+            {
+                "name": "Gary Basaraba",
+                "character": "Detective Burns"
+            },
+            {
+                "name": "Charlie Musselwhite",
+                "character": "Alvin Reynolds"
+            },
+            {
+                "name": "Pat Healy",
+                "character": "Agent John Burger"
+            },
+            {
+                "name": "Steve Witting",
+                "character": "Dr. James Shoun"
+            },
+            {
+                "name": "Steve Routman",
+                "character": "Dr. David Shoun"
+            },
+            {
+                "name": "Gene Jones",
+                "character": "Pitts Beatty"
+            },
+            {
+                "name": "Michael Abbott Jr.",
+                "character": "Agent Frank Smith"
+            },
+            {
+                "name": "J. C. MacKenzie",
+                "character": "Radio Announcer"
+            },
+            {
+                "name": "Jack White",
+                "character": "Radio Show Actor"
+            },
+            {
+                "name": "Larry Sellers",
+                "character": "Non-Hon-Zhin-Ga"
+            },
+            {
+                "name": "Barry Corbin",
+                "character": "Undertaker Turton"
+            },
+            {
+                "name": "Gabriel Casdorph",
+                "character": "Joe Jones"
+            },
+            {
+                "name": "Samuel French",
+                "character": "Agent CJ Robinson"
+            },
+            {
+                "name": "Wally Welch",
+                "character": "Bob Mount"
+            },
+            {
+                "name": "James Roman Dailey Jr.",
+                "character": "Baby Namer"
+            },
+            {
+                "name": "Christopher Cote",
+                "character": "Baby Namer (for Anna)"
+            },
+            {
+                "name": "Randy Houser",
+                "character": "Scott Mathis"
+            },
+            {
+                "name": "Moe Headrick",
+                "character": "Sheriff Freas"
+            },
+            {
+                "name": "Pete Yorn",
+                "character": "Acie Kirby"
+            },
+            {
+                "name": "Margaret Shannon-Sisk",
+                "character": "Wife of Pipe Keeper / Wailing Relative"
+            },
+            {
+                "name": "Moira Redcorn",
+                "character": "Prologue Wailer"
+            },
+            {
+                "name": "Eric Parkinson",
+                "character": "Deputy Marshal"
+            },
+            {
+                "name": "Chase Parker",
+                "character": "Osage at Oil Discovery / Fairfax Explosion Responder"
+            },
+            {
+                "name": "Jarad Looper",
+                "character": "Osage at Oil Discover"
+            },
+            {
+                "name": "John Gibbs",
+                "character": "Osage at Oil Discover"
+            },
+            {
+                "name": "Jerry Logsdon",
+                "character": "Osage at Oil Discover"
+            },
+            {
+                "name": "Jacob Lux",
+                "character": "Osage at Oil Discover"
+            },
+            {
+                "name": "Xavier Toehay",
+                "character": "Osage at Oil Discover"
+            },
+            {
+                "name": "Mike Cook",
+                "character": "Hawker at Train"
+            },
+            {
+                "name": "Katherine Willis",
+                "character": "Myrtie Hale"
+            },
+            {
+                "name": "Delani Chambers",
+                "character": "Willie Hale"
+            },
+            {
+                "name": "Zachary Hokeah",
+                "character": "Osage Dying from Poison"
+            },
+            {
+                "name": "Talon Satepauhoodle",
+                "character": "John Whitehair"
+            },
+            {
+                "name": "Jennifer Rader",
+                "character": "Sara Butler"
+            },
+            {
+                "name": "Chance Rush",
+                "character": "Bill Stepson"
+            },
+            {
+                "name": "Dana Daylight",
+                "character": "Anna Sanford"
+            },
+            {
+                "name": "Mahada Sanders",
+                "character": "Rose Lewis"
+            },
+            {
+                "name": "Ben Hall",
+                "character": "Sara's Murderer"
+            },
+            {
+                "name": "John Q. Wilson",
+                "character": "Bank Clerk"
+            },
+            {
+                "name": "Beau Smith",
+                "character": "Photos Hustler #1"
+            },
+            {
+                "name": "Victor McCay",
+                "character": "Photos Hustler #2"
+            },
+            {
+                "name": "Nathalie Standingcloud",
+                "character": "Roan Girlfriend"
+            },
+            {
+                "name": "Jay Paulson",
+                "character": "Car Salesman"
+            },
+            {
+                "name": "Marvin E. Stepson Jr.",
+                "character": "Osage Family Buying Car"
+            },
+            {
+                "name": "Tracey Ann Moore",
+                "character": "Osage Family Buying Car"
+            },
+            {
+                "name": "Easton Wade Yellowfish",
+                "character": "Osage Family Buying Car"
+            },
+            {
+                "name": "Reignen Yellowfish",
+                "character": "Osage Family Buying Car"
+            },
+            {
+                "name": "Candice Costello",
+                "character": "Catherine Cole"
+            },
+            {
+                "name": "Father Chris Daigle",
+                "character": "Catholic Priest"
+            },
+            {
+                "name": "Justin France",
+                "character": "Card Player"
+            },
+            {
+                "name": "Jerry Wolf",
+                "character": "Fred Denoya (Robbed)"
+            },
+            {
+                "name": "Addie Roanhorse",
+                "character": "Mrs. DeNoya (Robbed)"
+            },
+            {
+                "name": "Erica Pretty Eagle Moore",
+                "character": "Baby Naming Mother #1 / Bridesmaid"
+            },
+            {
+                "name": "Mason Cunningham",
+                "character": "Baby Naming Father"
+            },
+            {
+                "name": "Norma Jean",
+                "character": "Vera (Mollie's Housekeeper)"
+            },
+            {
+                "name": "Elisha Pratt",
+                "character": "Joseph Bigheart"
+            },
+            {
+                "name": "Desireee Storm Brave",
+                "character": "Bertha Bigheart"
+            },
+            {
+                "name": "Margaret Gray",
+                "character": "Grace Bigheart"
+            },
+            {
+                "name": "Christopher Hill",
+                "character": "John Bigheart"
+            },
+            {
+                "name": "Dolan Wilson",
+                "character": "Justice of the Peace"
+            },
+            {
+                "name": "Jackie Wyatt",
+                "character": "Wedding Photographer"
+            },
+            {
+                "name": "Rayna Gellert",
+                "character": "Wedding Band Lead Fiddle"
+            },
+            {
+                "name": "Nokosee Fields",
+                "character": "Wedding Band"
+            },
+            {
+                "name": "Kieran Kane",
+                "character": "Wedding Band"
+            },
+            {
+                "name": "Lucas Ross",
+                "character": "Wedding Band"
+            },
+            {
+                "name": "Elijah Cemp Ragsdale",
+                "character": "Wedding Band"
+            },
+            {
+                "name": "Vanessa Rose Pham",
+                "character": "Elizabeth Burkhart (Baby)"
+            },
+            {
+                "name": "Terry Allen",
+                "character": "Uncle Jim"
+            },
+            {
+                "name": "Jo Harvey Allen",
+                "character": "Aunt Annie"
+            },
+            {
+                "name": "Sarah Spurger",
+                "character": "Martha (Nanny)"
+            },
+            {
+                "name": "Joshua Close",
+                "character": "Horace Burkhart"
+            },
+            {
+                "name": "Elden Henson",
+                "character": "Duke Burkhart"
+            },
+            {
+                "name": "Kinsleigh McNac",
+                "character": "Elizabeth Burkhart (2-3 years)"
+            },
+            {
+                "name": "Roanin Davis",
+                "character": "Cowboy Burkhart (Baby)"
+            },
+            {
+                "name": "David Fields",
+                "character": "Bob The Cab Driver"
+            },
+            {
+                "name": "Anthony J. Harvey",
+                "character": "Charlie Whitehorn"
+            },
+            {
+                "name": "Stephen Berkman",
+                "character": "Studio Photographer"
+            },
+            {
+                "name": "William Alyn Hill",
+                "character": "Studio Vagrant #1"
+            },
+            {
+                "name": "Joseph Spinelli",
+                "character": "Friendly Joe"
+            },
+            {
+                "name": "Blaine Hall",
+                "character": "Studio Vagrant #2"
+            },
+            {
+                "name": "Brent Langdon",
+                "character": "Barney McBride"
+            },
+            {
+                "name": "Leland Prater",
+                "character": "Rex Theater Manager"
+            },
+            {
+                "name": "DJ Whited",
+                "character": "Cave Outlaw"
+            },
+            {
+                "name": "Elizabeth Waller",
+                "character": "Elizabeth Burkhart (3-5 Years)"
+            },
+            {
+                "name": "Jessica Harjo",
+                "character": "Pearl (Henry's Girlfriend)"
+            },
+            {
+                "name": "Joey Oglesby",
+                "character": "Roy Bunch"
+            },
+            {
+                "name": "Alexis Ann",
+                "character": "Mary Roan"
+            },
+            {
+                "name": "Lee Eddy",
+                "character": "Mrs. Mackie"
+            },
+            {
+                "name": "Gary S. Pratt",
+                "character": "Bank Manager"
+            },
+            {
+                "name": "Nathaniel Arcand",
+                "character": "Ancestor Warrior"
+            },
+            {
+                "name": "Kristin Keith",
+                "character": "Speakeasy Prostitute"
+            },
+            {
+                "name": "Bravery Nowlin",
+                "character": "Cowboy (2-3 Years)"
+            },
+            {
+                "name": "Edward Gray Sr.",
+                "character": "Fleeing Osage Family"
+            },
+            {
+                "name": "Angela Pratt",
+                "character": "Fleeing Osage Family"
+            },
+            {
+                "name": "Henry Amos Gray",
+                "character": "Fleeing Osage Family"
+            },
+            {
+                "name": "Samuel Gray",
+                "character": "Fleeing Osage Family"
+            },
+            {
+                "name": "Edward Gray Jr.",
+                "character": "Fleeing Osage Family"
+            },
+            {
+                "name": "Mamie Cozad",
+                "character": "Baby Anna (at naming)"
+            },
+            {
+                "name": "Shonagh Smith",
+                "character": "Nettie Brookshire"
+            },
+            {
+                "name": "Joel Tallchief Lemon",
+                "character": "Fairfax Explosion Responder"
+            },
+            {
+                "name": "Richard Lookout RulingHisSun",
+                "character": "Fairfax Explosion Responder"
+            },
+            {
+                "name": "Brett Bower",
+                "character": "Fairfax Explosion Responder"
+            },
+            {
+                "name": "Garrison Panzer",
+                "character": "Radio Announcer"
+            },
+            {
+                "name": "River Rhoades",
+                "character": "Cowboy (4-5 Years)"
+            },
+            {
+                "name": "Zack T. Morris",
+                "character": "Osage Delegation Member"
+            },
+            {
+                "name": "Harrison Shackelford",
+                "character": "Osage Delegation Member"
+            },
+            {
+                "name": "Alexis Waller",
+                "character": "Elizabeth Burkhart (5-6 years)"
+            },
+            {
+                "name": "Mark Landon Smith",
+                "character": "President Coolidge"
+            },
+            {
+                "name": "Tom Ashmore",
+                "character": "Tribal Council Interpreter"
+            },
+            {
+                "name": "Myron F. Red Eagle",
+                "character": "Osage Man Town Dance"
+            },
+            {
+                "name": "Dolores Marie Goodeagle",
+                "character": "Osage Woman Town Dance"
+            },
+            {
+                "name": "Matt Tolentino",
+                "character": "Town Dance Band"
+            },
+            {
+                "name": "Johnny Baier",
+                "character": "Town Dance Band"
+            },
+            {
+                "name": "Gregory Fallis",
+                "character": "Town Dance Band"
+            },
+            {
+                "name": "Patrick Bubert",
+                "character": "Town Dance Band"
+            },
+            {
+                "name": "TJ Muller",
+                "character": "Town Dance Band"
+            },
+            {
+                "name": "Will Reardon-Anderson",
+                "character": "Town Dance Band"
+            },
+            {
+                "name": "Peter Reardon-Anderson",
+                "character": "Town Dance Band"
+            },
+            {
+                "name": "Kyle Dillingham",
+                "character": "Town Dance Band"
+            },
+            {
+                "name": "Jacob Johnson",
+                "character": "Town Dance Band"
+            },
+            {
+                "name": "Jeffrey Stevenson",
+                "character": "Town Dance Band"
+            },
+            {
+                "name": "Clint Rohr",
+                "character": "Town Dance Band"
+            },
+            {
+                "name": "D. Reride Smith",
+                "character": "Hale's Ranch Hand"
+            },
+            {
+                "name": "James Healy Jr.",
+                "character": "2nd Insurance Man"
+            },
+            {
+                "name": "Jeremy Goodvoice",
+                "character": "Pony Watching Man"
+            },
+            {
+                "name": "Ron McMahan",
+                "character": "Old Timer"
+            },
+            {
+                "name": "Seth Buckminster",
+                "character": "Barber"
+            },
+            {
+                "name": "Penny Potts",
+                "character": "Ballet Instructor"
+            },
+            {
+                "name": "Melissa Tiger",
+                "character": "Pony Watching Woman"
+            },
+            {
+                "name": "Karen Garlitz",
+                "character": "Tillie's Stepson"
+            },
+            {
+                "name": "Bronson Redeagle",
+                "character": "Tillie's Son"
+            },
+            {
+                "name": "Jenny Paige Lynn",
+                "character": "Tillie's Daughter"
+            },
+            {
+                "name": "David Born",
+                "character": "Kelsie's Lawyer"
+            },
+            {
+                "name": "Mary Buss",
+                "character": "John Ramsey's Wife"
+            },
+            {
+                "name": "Ted Welch",
+                "character": "Reporter #1"
+            },
+            {
+                "name": "Carl Palmer",
+                "character": "Reporter #2"
+            },
+            {
+                "name": "Tanner Brantley",
+                "character": "Marshall Gunman"
+            },
+            {
+                "name": "Jezy Gray",
+                "character": "Hale's Secretary"
+            },
+            {
+                "name": "Steve Eastin",
+                "character": "Judge John C. Pollock"
+            },
+            {
+                "name": "Joe Chrest",
+                "character": "Lawyer Freeling"
+            },
+            {
+                "name": "Brian Shoop",
+                "character": "Mr. Kraceon"
+            },
+            {
+                "name": "James Carroll",
+                "character": "Mr. Solowey"
+            },
+            {
+                "name": "Lux Britni Malaske",
+                "character": "Baby Anna (2 years)"
+            },
+            {
+                "name": "Adam Washington",
+                "character": "Acolyte"
+            },
+            {
+                "name": "Larry Jack Dotson",
+                "character": "Jailer"
+            },
+            {
+                "name": "Larry Fessenden",
+                "character": "Radio Voice (for Hale)"
+            },
+            {
+                "name": "Welker White",
+                "character": "Radio Voice (Hale's Relative)"
+            },
+            {
+                "name": "Martin Scorsese",
+                "character": "Radio Show Producer"
+            },
+            {
+                "name": "Marko Costanzo",
+                "character": "Radio Sound Effects"
+            },
+            {
+                "name": "Nicholas White",
+                "character": "Radio Sound Effects"
+            },
+            {
+                "name": "Rob Fisher",
+                "character": "Radio Show Conductor"
+            },
+            {
+                "name": "Vince Giordano",
+                "character": "Radio Show Band Leader"
+            },
+            {
+                "name": "Paul Woodiel",
+                "character": "Radio Show Orchestra"
+            },
+            {
+                "name": "Andy Stein",
+                "character": "Radio Show Orchestra"
+            },
+            {
+                "name": "Sam Bardfeld",
+                "character": "Radio Show Orchestra"
+            },
+            {
+                "name": "Joe Boga",
+                "character": "Radio Show Orchestra"
+            },
+            {
+                "name": "Jon-Erik Kellso",
+                "character": "Radio Show Orchestra"
+            },
+            {
+                "name": "Jim Fryer",
+                "character": "Radio Show Orchestra"
+            },
+            {
+                "name": "Marc Phaneuf",
+                "character": "Radio Show Orchestra"
+            },
+            {
+                "name": "Mark Lopeman",
+                "character": "Radio Show Orchestra"
+            },
+            {
+                "name": "Chris Byars",
+                "character": "Radio Show Orchestra"
+            },
+            {
+                "name": "Vinny Raniolo",
+                "character": "Radio Show Orchestra"
+            },
+            {
+                "name": "Paul Wells",
+                "character": "Radio Show Orchestra"
+            },
+            {
+                "name": "Peter Yarin",
+                "character": "Radio Show Orchestra"
+            },
+            {
+                "name": "Scott George",
+                "character": "End Celebration Osage Head Singer"
+            },
+            {
+                "name": "Kenneth Bighorse Jr.",
+                "character": "End Celebration Osage Head Singer"
+            },
+            {
+                "name": "Vann Bighorse",
+                "character": "End Celebration Osage Head Singer"
+            },
+            {
+                "name": "Anna L. Bighorse",
+                "character": "End Celebration Osage Singer"
+            },
+            {
+                "name": "Mason Bighorse",
+                "character": "End Celebration Osage Singer"
+            },
+            {
+                "name": "Norris Bighorse",
+                "character": "End Celebration Osage Singer"
+            },
+            {
+                "name": "Scott Bighorse",
+                "character": "End Celebration Osage Singer"
+            },
+            {
+                "name": "Paul Bighorse",
+                "character": "End Celebration Osage Singer"
+            },
+            {
+                "name": "Taveah Ann George",
+                "character": "End Celebration Osage Singer"
+            },
+            {
+                "name": "Wahwastoas J. Jones",
+                "character": "End Celebration Osage Singer"
+            },
+            {
+                "name": "Dobbin Monoessy Knifechief",
+                "character": "End Celebration Osage Singer"
+            },
+            {
+                "name": "Julia Lookout",
+                "character": "End Celebration Osage Singer"
+            },
+            {
+                "name": "Jennifer Moses",
+                "character": "End Celebration Osage Singer"
+            },
+            {
+                "name": "Francis Pipestem Jr.",
+                "character": "End Celebration Osage Singer"
+            },
+            {
+                "name": "Michael Paul Pahsetopah",
+                "character": "End Celebration Osage Singer"
+            },
+            {
+                "name": "Silas Satepauhoodle",
+                "character": "End Celebration Osage Singer"
+            },
+            {
+                "name": "Cherylyn Oberly Satepauhoodle",
+                "character": "End Celebration Osage Singer"
+            },
+            {
+                "name": "Charisse Satepauhoodle",
+                "character": "End Celebration Osage Singer"
+            },
+            {
+                "name": "Lynette Satepauhoodle",
+                "character": "End Celebration Osage Singer"
+            },
+            {
+                "name": "John Shaw",
+                "character": "End Celebration Osage Singer"
+            },
+            {
+                "name": "Angela Toineeta Satepauhoodle",
+                "character": "End Celebration Osage Singer"
+            },
+            {
+                "name": "Alexandria Toineeta",
+                "character": "End Celebration Osage Singer"
+            },
+            {
+                "name": "Ed Yellowfish",
+                "character": "End Celebration Osage Singer"
+            },
+            {
+                "name": "Nick W. Nicholson",
+                "character": "Deputy Dodge (uncredited)"
+            },
+            {
+                "name": "Danny Frost",
+                "character": "Lawyer (uncredited)"
+            }
+        ]
     }
 ]
 

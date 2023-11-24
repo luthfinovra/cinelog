@@ -10,3 +10,11 @@ module.exports.renderDetailFilm = (req, res) => {
     }
     res.render('film/detail', {data});
 }
+
+module.exports.renderFilmPopuler = (req, res) => {
+    res.render('film/populer', {films});
+}
+
+module.exports.renderFilmRekomendasi = (req, res) => {
+    res.render('film/rekomendasi', {films});
+}
