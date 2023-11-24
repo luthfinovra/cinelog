@@ -18,3 +18,8 @@ module.exports.renderFilmPopuler = (req, res) => {
 module.exports.renderFilmRekomendasi = (req, res) => {
     res.render('film/rekomendasi', {films});
 }
+
+module.exports.renderFilmCari = (req, res) => {
+    q  = req.query;
+    res.render('film/cari', {films});
+}

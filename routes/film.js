@@ -12,6 +12,9 @@ router.route('/populer')
 router.route('/rekomendasi')
     .get(film.renderFilmRekomendasi);
 
+router.route('/cari')
+    .get(film.renderFilmCari);
+
 router.route('/:id')
     .get(film.renderDetailFilm);
 
