@@ -1,5 +1,6 @@
 const Pengguna = require('../models/film');
 const films = require('../dummy.js');
+const { query } = require('express');
 
 module.exports.renderDetailFilm = (req, res) => {
     data = "";
@@ -20,6 +21,13 @@ module.exports.renderFilmRekomendasi = (req, res) => {
 }
 
 module.exports.renderFilmCari = (req, res) => {
-    q  = req.query;
-    res.render('film/cari', {films});
+    const query = req.query.search;
+    
+    if (!query) {
+        return res.status(400).json({ error: 'Query parameter "q" is required.' });
+    }
+
+    const result = films.filter(item => item.judul.toLowerCase().includes(query.toLowerCase()));
+    
+    res.render('film/cari', {query, result});
 }
