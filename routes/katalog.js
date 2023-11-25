@@ -7,4 +7,10 @@ const katalog = require('../controllers/katalog');
 router.route('/')
     .get(katalog.renderShowKatalog);
 
+router.route('/edit')
+    .get(katalog.renderEditKatalog);
+
+router.route('/:id')
+    .get(katalog.renderKatalogDetail);
+
 module.exports = router;

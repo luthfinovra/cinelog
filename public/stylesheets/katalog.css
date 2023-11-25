@@ -1,0 +1,21 @@
+a {
+    text-decoration: none;
+}
+
+a #elmKatalog{
+    border-radius: 1em;
+    transition: border-color 0.3s, color 0.3s;
+    padding: 1em;
+    margin: 1em 1em;
+}
+
+a:hover #elmKatalog{
+    color: #30475E;
+    background-color: #D9D9D9;
+    transition: border-color 0.3s, color 0.3s;
+}
+
+#header{
+    border-bottom: solid #222831;
+    padding-bottom: 0.1em;
+}

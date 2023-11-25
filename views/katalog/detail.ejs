@@ -1,0 +1,41 @@
+<% layout('layout/boilerplate') %>
+    <link rel="stylesheet" href="/stylesheets/katalog.css">
+    <div class="container-fluid">
+        <a href="/katalog">
+            <h2>
+                < Kembali</h2>
+        </a>
+        <br>
+        <div class="wrapper">
+            <div class="d-flex justify-content-between align-items-center" id="header">
+                <h3>
+                    <%= data.judul %>
+                </h3>
+                <a href="/katalog/edit/" class="btn btn-primary">Ubah</a>
+            </div>
+            <p>
+                <%= data.deskripsi %>
+            </p>
+            <div class="row">
+                <% for(let film of data.film) { %>
+
+                    <div class="poster card" style="width: 10rem;">
+                        <a href="/film/<%= film.id %>" title="<%= film.judul %>">
+                            <img src="https://image.tmdb.org/t/p/w220_and_h330_face<%= film.link_cover %>"
+                                class="card-img-top" srcset="/t/p/w220_and_h330_face<%= film.link_cover %> 2x"
+                                alt="<%= film.judul %>">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <%= film.judul %>
+                                </h5>
+                                <p class="card-text">
+                                    <%= film.tahunRilis %> | <%= film.rating %>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <% } %>
+            </div>
+        </div>
+    </div>
+    </div>
