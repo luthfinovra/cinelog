@@ -1,14 +1,46 @@
 <% layout("layout/boilerplate") %>
 <a href="/"> <H2>< Kembali</H2> </a>
+<style>
+    .judul{
+        border-bottom: solid black;
+    }
+
+    .tombol_tambah{
+        border: none;
+        color: white;
+        background-color: #30475E;
+        border-radius: 7px;
+        padding: 10px 20px;
+    }
+
+    .tampil_genre {
+        background-color: #B8B8B8;
+        border-radius: 22px;
+        padding: 10px 20px;
+        border: none;
+    }
+    
+</style>
+
 <div class="detail">
     <img class="poster" src="https://image.tmdb.org/t/p/w220_and_h330_face<%= data.link_cover %>" srcset="/t/p/w220_and_h330_face<%= data.link_cover %> 2x" alt="<%= data.judul %>">
-    <h3><%= data.judul %> (<%= data.tahunRilis %>) | <%= data.durasi %> Menit</h3>
+    <br><br>
+    <a href="">
+        <button class="tombol_tambah"> + Tambah ke Katalog</button>
+    </a>
+    <br><br>
+    <div>
+        <h2 class="judul"><%= data.judul %> (<%= data.tahunRilis %>) </h2>
+        <h3><%= data.durasi %> Menit | <%= data.rating %> | Sutradara: <b><%= data.sutradara %></b> </h3>
+    </div>
     <div class="container-fluid d-flex mx-3 aligin-item-left">
     <% for(let genre of data.genre) { %>
         <div class="btn btn-secondary-outline">
-            <p><%= genre %></p>
+            <button class="tampil_genre"><%= genre %></button>
         </div>
     <% } %>
     </div>
     <p><%= data.sinopsis %></p>
+    <h3 class="judul">Pemeran</h3>
+    <p><%= data.pemeran %></p>
 </div>
