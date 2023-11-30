@@ -16,6 +16,17 @@ body {
     border-color: #30475E;
 }
 
+.btn-danger{
+    border: 0.1em solid transparent;
+}
+
+.btn-danger:hover{
+    background-color: #D9D9D9;
+    color: #c82333;
+    border: 0.1em solid;
+    border-color: #c82333;
+}
+
 a {
     color: #30475E;
 }

@@ -9,6 +9,10 @@ module.exports.renderEditKatalog = (req, res) => {
     res.render('katalog/edit', {katalogs});
 }
 
+module.exports.renderNewKatalogForm = (req, res) => {
+    res.render('katalog/new', {katalogs});
+}
+
 module.exports.renderKatalogDetail = (req, res) => {
     data = "";
     for(let katalog of katalogs){

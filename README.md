@@ -6,7 +6,7 @@
 Cinelog merupakan aplikasi berbasis website yang dapat digunakan oleh pengguna untuk mendapatkan informasi film terbaru. Selain itu pengguna juga dapat memanfaatkan fitur katalog untuk mengorganisir berbagai film dan mendapatkan berbagai rekomendasi yang sesuai dengan preferensi pengguna
 
 ### Tech Stack
-1. Front-end: Tailwind.css
+1. Front-end: Bootstrap 5
 2. Back-end: Javascript (Express.js)
 3. DBMS: MongoDB
 

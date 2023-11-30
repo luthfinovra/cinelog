@@ -6,13 +6,15 @@
                 < Kembali</h2>
         </a>
         <br>
-
-        <h1>UNDER CONSTRUCTION</h1>
         <div class="wrapper">
-            <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex justify-content-between align-items-center" id="header">
                 <h2>Daftar Katalog Anda</h2>
-                <a href="/katalog/edit/" class="btn btn-primary">Ubah</a>
+                <div>
+                    <a href="/katalog/new/" class="btn btn-primary">Tambah</a>
+                    <a href="/katalog/" class="btn btn-danger ml-auto">Cancel</a>
+                </div>
             </div>
+            
             <% for (let katalog of katalogs) { %>
                 <a href="/katalog/<%= katalog.id %>" title="<%= katalog.judul %>">
                     <div class="row" id="elmKatalog">
@@ -39,6 +41,12 @@
                                     <% break; %>
                                     <% } %>
                                     <% } %>
+                        </div>
+                        <div class="ml-auto">
+                            <!-- Your first button -->
+                            <a href="/katalog/<%= katalog.id %>/edit/" class="btn btn-primary">Ubah</a>
+                            <!-- Your second button -->
+                            <a href="/katalog/<%= katalog.id %>/delete/" class="btn btn-danger">Hapus</a>
                         </div>
                     </div>
                 </a>

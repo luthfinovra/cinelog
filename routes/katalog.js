@@ -10,6 +10,9 @@ router.route('/')
 router.route('/edit')
     .get(katalog.renderEditKatalog);
 
+router.route('/new')
+    .get(katalog.renderNewKatalogForm);
+
 router.route('/:id')
     .get(katalog.renderKatalogDetail);
 
