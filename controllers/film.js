@@ -21,13 +21,15 @@ module.exports.renderFilmRekomendasi = (req, res) => {
 }
 
 module.exports.renderFilmCari = (req, res) => {
-    const query = req.query.search;
-    
+    let query = req.query.search;
+
     if (!query) {
-        return res.status(400).json({ error: 'Query parameter "q" is required.' });
+        query = 'Anda tidak mencari apapun';
+        let result = ""
+        return res.render('film/cari', {query, result});
     }
 
     const result = films.filter(item => item.judul.toLowerCase().includes(query.toLowerCase()));
-    
+
     res.render('film/cari', {query, result});
 }
