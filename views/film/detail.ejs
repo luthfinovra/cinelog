@@ -46,5 +46,9 @@
     </div>
     <p><%= data.sinopsis %></p> <br>
     <h3 class="judul">Pemeran</h3>
-    <p><%= data.pemeran %></p>
+    <% for(let pemeran of data.pemeran) { %>
+        <div class="btn btn-secondary-outline">
+            <button class="tampil_genre"><%= pemeran.name %></button>
+        </div>
+    <% } %>
 </div>
