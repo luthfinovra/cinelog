@@ -23,6 +23,11 @@
         padding: 10px 20px;
         border: none;
     }
+
+    .tampil_pemeran{
+        border: none;
+        border-bottom: solid black;
+    }
     
 </style>
 
@@ -48,7 +53,10 @@
     <h3 class="judul">Pemeran</h3>
     <% for(let pemeran of data.pemeran) { %>
         <div class="btn btn-secondary-outline">
-            <button class="tampil_genre"><%= pemeran.name %></button>
+            <button class="tampil_genre">
+                <div class="tampil_pemeran"><%= pemeran.name %></div>
+                "<%= pemeran.character %>"
+            </button>
         </div>
     <% } %>
 </div>
