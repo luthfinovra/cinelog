@@ -14,7 +14,7 @@
         color: white;
         background-color: #30475E;
         border-radius: 7px;
-        padding: 15px 45px;
+        padding: 15px 34px;
     }
 
     .tampil_genre {
@@ -28,6 +28,21 @@
         border: none;
         border-bottom: solid black;
     }
+
+    .rating{
+        padding-top: 2px;
+        padding-bottom: 10px;
+        height: 43px;
+        width: 43px;
+    }
+
+    .tambah_katalog{
+        padding-top: 2px;
+        padding-bottom: 8px;
+        padding-right: 10px;
+        height: 33px;
+        width: 33px;
+    }
     
 </style>
 
@@ -35,12 +50,15 @@
     <img class="poster" src="https://image.tmdb.org/t/p/w220_and_h330_face<%= data.link_cover %>" srcset="/t/p/w220_and_h330_face<%= data.link_cover %> 2x" alt="<%= data.judul %>">
     <br><br>
     <a href="">
-        <button class="tombol_tambah"> + Tambah ke Katalog</button>
+        <button class="tombol_tambah">
+            <img src="/icon/tambah_katalog.svg" class="tambah_katalog">
+            Tambah ke Katalog
+        </button>
     </a>
     <br><br>
     <div>
         <h2 class="judul"><%= data.judul %> (<%= data.tahunRilis %>) </h2>
-        <h3><%= data.durasi %> Menit | <%= data.rating %>/10 | Sutradara: <b><%= data.sutradara %></b> </h3>
+        <h3><%= data.durasi %> Menit | <img src="/icon/rating.svg" class="rating"> <%= data.rating %>/10 | Sutradara: <b><%= data.sutradara %></b> </h3>
     </div>
     <div class="container-fluid d-flex mx-3 aligin-item-left">
     <% for(let genre of data.genre) { %>
