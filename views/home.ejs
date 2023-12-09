@@ -6,7 +6,7 @@
             </a>
             <div class="row">
                 <% for (let film of films) { %>
-                            <div class="poster card"style="width: 10rem;">
+                            <div class="poster card"style="width: 11rem;">
                                 <a  href="/film/<%= film.id %>" title="<%= film.judul %>">
                                 <img src="https://image.tmdb.org/t/p/w220_and_h330_face<%= film.link_cover %>" class="card-img-top" srcset="/t/p/w220_and_h330_face<%= film.link_cover %> 2x" alt="<%= film.judul %>">
                                 <div class="card-body">
@@ -23,7 +23,7 @@
         </a>
         <div class="row">
             <% for (let film of films) { %>
-                        <div class="poster card"style="width: 10rem;">
+                        <div class="poster card"style="width: 11rem;">
                             <a  href="/film/<%= film.id %>" title="<%= film.judul %>">
                             <img src="https://image.tmdb.org/t/p/w220_and_h330_face<%= film.link_cover %>" class="card-img-top" srcset="/t/p/w220_and_h330_face<%= film.link_cover %> 2x" alt="<%= film.judul %>">
                             <div class="card-body">
