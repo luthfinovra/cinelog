@@ -1,81 +1,109 @@
 <% layout("layout/boilerplate") %>
 <a href="/"> <H2>< Kembali</H2> </a>
 <style>
-    .poster{
-        border-radius: 7px;
-    }
+.poster{
+    border-radius: 7px;
+}
 
-    .judul{
-        border-bottom: solid;
-        border-image:  linear-gradient(to right, #222831 30%, #30475E 65%, #F05454 25%) 5;
-    }
+.judul{
+    border-bottom: solid;
+    border-image:  linear-gradient(to right, #222831 30%, #30475E 65%, #F05454 25%) 5;
+}
 
-    .tombol_tambah{
-        border: none;
-        color: white;
-        background-color: #30475E;
-        border-radius: 7px;
-        padding: 15px 34px;
-    }
+.tombol_tambah{
+    border: none;
+    color: white;
+    background-color: #30475E;
+    border-radius: 7px;
+    padding: 10px 32px;
+}
 
-    .tampil_genre {
-        background-color: #D9D9D9;
-        border-radius: 22px;
-        padding: 10px 20px;
-        border: none;
-    }
+.tampil_genre {
+    background-color: #D9D9D9;
+    border-radius: 22px;
+    padding: 10px 20px;
+    border: none;
+}
 
-    .tampil_pemeran{
-        border: none;
-        border-bottom: solid black;
-    }
+.tampil_pemeran{
+    border: none;
+    border-bottom: solid black;
+}
 
-    .rating{
-        padding-top: 2px;
-        padding-bottom: 10px;
-        height: 43px;
-        width: 43px;
-    }
+.rating{
+    padding-top: 2px;
+    padding-bottom: 10px;
+    height: 43px;
+    width: 43px;
+}
 
-    .tambah_katalog{
-        padding-top: 2px;
-        padding-bottom: 8px;
-        padding-right: 10px;
-        height: 33px;
-        width: 33px;
-    }
-    
+.tambah_katalog{
+    padding-top: 2px;
+    padding-bottom: 8px;
+    padding-right: 10px;
+    height: 33px;
+    width: 33px;
+}
+
+/* Style the navigation menu */
+nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 20px; 
+}
+
+/* Style the content */
+article {
+    -webkit-flex: 4;
+    -ms-flex: 4;
+    flex: 4;
+    padding: 12px;
+}
+
+/* Clear floats after the columns */
+section {
+    display: -webkit-flex;
+    display: flex;
+}
 </style>
 
 <div class="detail">
-    <img class="poster" src="https://image.tmdb.org/t/p/w220_and_h330_face<%= data.link_cover %>" srcset="/t/p/w220_and_h330_face<%= data.link_cover %> 2x" alt="<%= data.judul %>">
-    <br><br>
-    <a href="">
-        <button class="tombol_tambah">
-            <img src="/icon/tambah_katalog.svg" class="tambah_katalog">
-            Tambah ke Katalog
-        </button>
-    </a>
-    <br><br>
-    <div>
-        <h2 class="judul"><%= data.judul %> (<%= data.tahunRilis %>) </h2>
-        <h3><%= data.durasi %> Menit | <img src="/icon/rating.svg" class="rating"> <%= data.rating %>/10 | Sutradara: <b><%= data.sutradara %></b> </h3>
-    </div>
-    <div class="container-fluid d-flex mx-3 aligin-item-left">
-    <% for(let genre of data.genre) { %>
-        <div class="btn btn-secondary-outline">
-            <button class="tampil_genre"><%= genre %></button>
-        </div>
-    <% } %>
-    </div>
-    <p><%= data.sinopsis %></p> <br>
-    <h3 class="judul">Pemeran</h3>
-    <% for(let pemeran of data.pemeran) { %>
-        <div class="btn btn-secondary-outline">
-            <button class="tampil_genre">
-                <div class="tampil_pemeran"><%= pemeran.name %></div>
-                "<%= pemeran.character %>"
-            </button>
-        </div>
-    <% } %>
+    <section>
+        <nav>
+          <img class="poster" src="https://image.tmdb.org/t/p/w220_and_h330_face<%= data.link_cover %>" srcset="/t/p/w220_and_h330_face<%= data.link_cover %> 2x" alt="<%= data.judul %>">
+          <br><br>
+          <a href="">
+              <button class="tombol_tambah">
+                  <img src="/icon/tambah_katalog.svg" class="tambah_katalog">
+                  Tambah ke Katalog
+              </button>
+          </a>
+        </nav>
+        
+        <article>
+            <div>
+                <h2 class="judul"><%= data.judul %> (<%= data.tahunRilis %>) </h2>
+                <h3><%= data.durasi %> Menit | <img src="/icon/rating.svg" class="rating"> <%= data.rating %>/10 | Sutradara: <b><%= data.sutradara %></b> </h3>
+            </div>
+            <div class="container-fluid d-flex mx-3 aligin-item-left">
+            <% for(let genre of data.genre) { %>
+                <div class="btn btn-secondary-outline">
+                    <button class="tampil_genre"><%= genre %></button>
+                </div>
+            <% } %>
+            </div>
+            <p><%= data.sinopsis %></p> <br>
+            <h3 class="judul">Pemeran</h3>
+            <% for(let pemeran of data.pemeran) { %>
+            <div class="btn btn-secondary-outline">
+                <button class="tampil_genre">
+                    <div class="tampil_pemeran"><%= pemeran.name %></div>
+                    "<%= pemeran.character %>"
+                </button>
+            </div>
+            <% } %>
+        </article>
+    </section>
+    
 </div>
