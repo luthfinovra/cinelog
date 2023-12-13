@@ -84,7 +84,7 @@ section {
         <article>
             <div>
                 <h2 class="judul"><%= data.judul %> (<%= data.tahunRilis %>) </h2>
-                <h3><%= data.durasi %> Menit | <img src="/icon/rating.svg" class="rating"> <%= data.rating %>/10 | Sutradara: <b><%= data.sutradara %></b> </h3>
+                <h3><%= data.durasi %> Menit | <img src="/icon/rating.svg" class="rating"> <%= data.rating.toFixed(1) %>/10 | Sutradara: <b><%= data.sutradara %></b> </h3>
             </div>
             <div class="container-fluid d-flex mx-3 aligin-item-left">
             <% for(let genre of data.genre) { %>

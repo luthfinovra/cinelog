@@ -16,6 +16,7 @@ a:hover #elmKatalog{
 }
 
 #header{
-    border-bottom: solid #222831;
+    border-bottom: solid;
+    border-image:  linear-gradient(to right, #222831 30%, #30475E 65%, #F05454 25%) 5;
     padding-bottom: 0.1em;
 }

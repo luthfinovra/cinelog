@@ -1,5 +1,5 @@
 <nav class="navbar sticky-top navbar-expand-lg">
-  <div class="container-fluid my-1">
+  <div class="container-fluid my-1 justify-content-between">
       <a class=" d-flex navbar-brand align-items-center" href="/">
           <!-- First SVG Logo -->
           <img src="/icon/logo.svg" class="align-self-center" alt="Your Logo" width="45" height="45" class="ml-4">
@@ -13,16 +13,19 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           
           <!-- Search bar in the middle -->
-          <form class="d-flex mx-auto" action="/film/cari" method="get">
+          <form class="d-flex justify-content-center" action="/film/cari" method="get">
             <input class="form-control me-2" type="text" name="search" placeholder="Judul Film" aria-label="Search">
             <button class="btn btn-primary" type="submit">Search</button>
           </form>
           
           <div class="navbar-nav ms-auto">
             <a class="nav-link" href="/katalog">Katalog</a>
+            <% if(!currentUser) {%>
               <a class="nav-link" href="/login">Login</a>
               <a class="nav-link" href="/register">Register</a>
-              <a class="nav-link" href="/login">Logout</a>
+              <% } else { %>
+              <a class="nav-link" id="logout" href="/logout">Logout</a>
+            <% } %>
           </div>
       </div>
   </div>

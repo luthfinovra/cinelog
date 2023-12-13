@@ -13,7 +13,7 @@
                             <img src="https://image.tmdb.org/t/p/w220_and_h330_face<%= film.link_cover %>" class="card-img-top" srcset="/t/p/w220_and_h330_face<%= film.link_cover %> 2x" alt="<%= film.judul %>">
                             <div class="card-body">
                             <h5 class="card-title"><%= film.judul %></h5>
-                            <p class="card-text"><%= film.tahunRilis %> | <%= film.rating  %></p>
+                            <p class="card-text"><%= film.tahunRilis %> | <img src="/icon/rating.svg" class="rating"> <%= film.rating.toFixed(1)  %></p>
                             </div></a>
                         </div>
             <% } %>

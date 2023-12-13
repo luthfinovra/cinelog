@@ -54,3 +54,10 @@ a {
 .wrapper{
     margin-bottom: 30px;
 }
+
+p .rating{
+    object-fit: cover;
+    width: 16px;
+    height: 16px;
+    margin-bottom: 6px;
+}

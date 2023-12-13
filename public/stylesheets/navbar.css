@@ -4,7 +4,8 @@
 
 .navbar {
     background-color: #D9D9D9;
-    border-bottom: #222831 solid;
+    border-bottom: solid;
+    border-image:  linear-gradient(to right, #222831 30%, #30475E 65%, #F05454 25%) 5;
 }
 
 .navbar-brand {
@@ -48,3 +49,9 @@
 .navbar h1 {
 margin-bottom: 0;
 }
+
+#logout:hover {
+    border-color: #F05454; /* Change underline color on hover */
+    color: #F05454;
+}
+
