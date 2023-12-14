@@ -1,5 +1,5 @@
 <% layout('layout/boilerplate') %>
-<link rel="stylesheet" href="/stylesheets/katalog.css">
+    <link rel="stylesheet" href="/stylesheets/katalog.css">
     <div class="container-fluid">
         <a href="/">
             <h2>
@@ -14,42 +14,41 @@
                     <a href="/katalog/" class="btn btn-danger ml-auto">Cancel</a>
                 </div>
             </div>
-            
+        </div>
+        <div class="container-fluid">
+
             <% for (let katalog of katalogs) { %>
-                <a href="/katalog/<%= katalog.id %>" title="<%= katalog.judul %>">
-                    <div class="row" id="elmKatalog">
-                        <div class="row">
-                            <h3><%= katalog.judul %></h3>
-                            <p><%= katalog.deskripsi %></p>
-                            <% count = 0 %>
+                <div class="row align-items-start my-3" id="elmKatalog">
+                    <div class="col-xg-5 col-lg-4 col-md-2">
+                        <h3>
+                            <%= katalog.judul %>
+                        </h3>
+                        <p>
+                            <%= katalog.deskripsi %>
+                        </p>
+                    </div>
+                            <% count=0 %>
                             <% for(let film of katalog.film) { %>
-                                <div class="poster card" style="width: 10rem;">
+                                <div class="col-xg-6 col-lg-7 col-md-9" style="width: 6rem;">
                                     <img src="https://image.tmdb.org/t/p/w220_and_h330_face<%= film.link_cover %>"
-                                    class="card-img-top" srcset="/t/p/w220_and_h330_face<%= film.link_cover %> 2x"
+                                    class="card-img-top" srcset="/t/p/w220_and_h330_face<%= film.link_cover %> 4x"
                                     alt="<%= film.judul %>">
-                                    <div class="card-body">
-                                        <h5 class="card-title">
-                                            <%= film.judul %>
-                                        </h5>
-                                        <p class="card-text">
-                                            <%= film.tahunRilis %> | <%= film.rating %>
-                                        </p>
-                                    </div>
                                 </div>
                                 <% count+=1 %>
-                                <% if(count >= 6) { %>
+                                <% if(count>= 6) { %>
                                     <% break; %>
                                     <% } %>
                                     <% } %>
-                        </div>
-                        <div class="ml-auto">
-                            <!-- Your first button -->
-                            <a href="/katalog/<%= katalog.id %>/edit/" class="btn btn-primary">Ubah</a>
-                            <!-- Your second button -->
-                            <a href="/katalog/<%= katalog.id %>/delete/" class="btn btn-danger">Hapus</a>
+                    <div class="col-md-1 align-items-center ms-auto">
+                        <div class="justify-content-between align-items-center">
+                            <a href="/katalog/edit/<%= katalog.id %>" class="btn btn-primary" id="Ubah">Ubah</a>
+                            <br>
+                            <br>
+                            <form action="/katalog/<%= katalog._id %>?_method=DELETE" method="POST">
+                                <button class="btn btn-danger" id="Hapus">Hapus</button>
+                            </form>
                         </div>
                     </div>
-                </a>
-            <% } %>
+                </div>
+                <% } %>
         </div>
-    </div>

@@ -1,5 +1,5 @@
 <% layout('layout/boilerplate') %>
-<link rel="stylesheet" href="/stylesheets/katalog.css">
+    <link rel="stylesheet" href="/stylesheets/katalog.css">
     <div class="container-fluid">
         <a href="/">
             <h2>
@@ -11,33 +11,34 @@
                 <h2>Katalog Saya</h2>
                 <a href="/katalog/edit/" class="btn btn-primary">Ubah</a>
             </div>
+        </div>
+        <div class="container-fluid">
             <% for (let katalog of katalogs) { %>
-                <a href="/katalog/<%= katalog.id %>" title="<%= katalog.judul %>">
-                    <div class="list" id="elmKatalog">
-                        <div class="row">
-                            <h3><%= katalog.judul %></h3>
-                            <div class="list" style="width: 46rem;"
-                                <p><%= katalog.deskripsi %></p>
-                            </div>
+                <a href="/katalog/<%= katalog._id %>">
 
-                            <% count = 0 %>                            
+                    <div class="row align-items-start my-3" id="elmKatalog">
+                        <div class="col-xg-5 col-lg-4 col-md-2">
+                            <h3>
+                                <%= katalog.judul %>
+                            </h3>
+                            <p>
+                                <%= katalog.deskripsi %>
+                            </p>
+                        </div>
+                        <% count=0 %>
                             <% for(let film of katalog.film) { %>
-                                <div class="list" style="width: 6rem;">
+                                <div class="col-xg-7 col-lg-8 col-md-10" style="width: 6rem;">
                                     <img src="https://image.tmdb.org/t/p/w220_and_h330_face<%= film.link_cover %>"
-                                    class="card-img-top" srcset="/t/p/w220_and_h330_face<%= film.link_cover %> 4x"
-                                    alt="<%= film.judul %>">
-                                    
-
-                                    
+                                        class="card-img-top" srcset="/t/p/w220_and_h330_face<%= film.link_cover %> 4x"
+                                        alt="<%= film.judul %>">
                                 </div>
                                 <% count+=1 %>
-                                <% if(count >= 4) { %>
-                                    <% break; %>
-                                    <% } %>
-                                    <% } %>
-                        </div>
+                                    <% if(count>= 6) { %>
+                                        <% break; %>
+                                            <% } %>
+                                                <% } %>
                     </div>
                 </a>
-            <% } %>
+                <% } %>
         </div>
     </div>

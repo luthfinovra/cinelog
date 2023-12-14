@@ -95,7 +95,8 @@ section {
             </div>
             <p><%= data.sinopsis %></p> <br>
             <h3 class="judul">Pemeran</h3>
-            <% for(let pemeran of data.pemeran) { %>
+            <% actors = data.pemeran //actors = data.pemeran.slice(10) %>
+            <% for(let pemeran of actors) { %>
             <div class="btn btn-secondary-outline">
                 <button class="tampil_genre">
                     <div class="tampil_pemeran"><%= pemeran.name %></div>

@@ -5,7 +5,7 @@
         </a>
         <br>
         <div class="wrapper">
-            <h2>Daftar film populer (dummy)</h2> 
+            <h2>Daftar Film Populer</h2>
             <div class="row">
                 <% for (let film of films) { %>
                             <div class="poster card"style="width: 10rem;">
@@ -16,7 +16,7 @@
                                 <p class="card-text"><%= film.tahunRilis %> | <img src="/icon/rating.svg" class="rating"> <%= film.rating.toFixed(1)  %></p>
                                 </div></a>
                             </div>
-                    <% } %>
+                <% } %>
             </div>
         </div>
     </div>

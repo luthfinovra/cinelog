@@ -5,9 +5,26 @@
     <div class="d-flex justify-content-between align-items-center" id="header">
         <h2>Tambahkan Katalog Baru</h2>
         <div>
-            <a href="/katalog/" class="btn btn-primary">Simpan</a>
             <a href="/katalog/" class="btn btn-danger ml-auto">Cancel</a>
         </div>
     </div>
-    
+    <div class="col-md-9 my-3">
+        <form action="/katalog" method="POST" novalidate class="validated-form">
+            <div class="mb-3">
+                <label class="form-label" for="judul">Judul</label>
+                <input class="form-control" type="text" id="judul" name="katalog[judul]" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="deskripsi">Deskripsi</label>
+                <textarea class="form-control" type="text" id="deskripsi" name="katalog[deskripsi]"
+                    required style="height: 200px;"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="film">Tambah Film</label>
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-success">Tambah Katalog</button>
+            </div>
+        </form>
+    </div>
 </div>

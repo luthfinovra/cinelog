@@ -1,26 +1,24 @@
-const Pengguna = require('../models/film');
-const films = require('../dummy.js');
-const { query } = require('express');
+const Film = require('../models/film');
 
-module.exports.renderDetailFilm = (req, res) => {
-    data = "";
-    for(let film of films){
-        if(film.id == req.params.id){
-            data = film;
-        }
-    }
+module.exports.renderDetailFilm = async (req, res) => {
+    data = await Film.find({id: req.params.id});
+    data = data[0];
     res.render('film/detail', {data});
 }
 
-module.exports.renderFilmPopuler = (req, res) => {
+module.exports.renderFilmPopuler = async (req, res) => {
+    films = await Film.find({}).sort({'rating': -1});
+    films = films.slice(0,100);
     res.render('film/populer', {films});
 }
 
-module.exports.renderFilmRekomendasi = (req, res) => {
+module.exports.renderFilmRekomendasi = async (req, res) => {
+    films = await Film.find({}).sort({'rating': -1});
+    films = films.slice(100,200);
     res.render('film/rekomendasi', {films});
 }
 
-module.exports.renderFilmCari = (req, res) => {
+module.exports.renderFilmCari = async (req, res) => {
     let query = req.query.search;
 
     if (!query) {
@@ -29,7 +27,6 @@ module.exports.renderFilmCari = (req, res) => {
         return res.render('film/cari', {query, result});
     }
 
-    const result = films.filter(item => item.judul.toLowerCase().includes(query.toLowerCase()));
-
+    const result = await Film.find({'judul': {$regex: `${query}`}}).sort({'rating': -1}).limit(50);
     res.render('film/cari', {query, result});
 }

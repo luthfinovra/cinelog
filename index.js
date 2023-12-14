@@ -1,3 +1,4 @@
+//Library
 const express = require('express');
 const path = require('path');
 const mongoose = require('mongoose');
@@ -5,16 +6,24 @@ const ejsMate = require('ejs-mate');
 const session = require('express-session');
 const MongoStore = require('connect-mongo');
 const flash = require('connect-flash');
-const ExpressError = require('./utils/ExpressError.js');
 const methodOverride = require('method-override');
 const passport = require('passport');
 const LocalStrategy = require('passport-local');
-const Pengguna = require('./models/pengguna');
 
+//Models
+const Pengguna = require('./models/pengguna');
+const Film = require('./models/film.js');
+
+//Routes
 const penggunaRoutes = require('./routes/pengguna.js');
 const katalogRoutes = require('./routes/katalog.js');
 const filmRoutes = require('./routes/film.js');
 
+//Utility
+const ExpressError = require('./utils/ExpressError.js');
+const catchAsync = require('./utils/catchAsync.js');
+
+//Connect to Database
 const dbUrl = process.env.DB_URL || `mongodb://127.0.0.1:27017/cinelog`;
 
 mongoose.connect(dbUrl);
@@ -25,6 +34,7 @@ db.once("open", ()=>{
     console.log("Database connected");
 })
 
+//Initialize Server
 const app = express();
 
 app.set('view engine', 'ejs');
@@ -37,6 +47,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 const secret = process.env.SECRET || 'shouldbeasecret';
 
+//Session Configuration
 const store = MongoStore.create({
     mongoUrl: dbUrl,
     touchAfter: 24 * 60 * 60,
@@ -65,6 +76,7 @@ const sessionConfig = {
 app.use(session(sessionConfig));
 app.use(flash());
 
+//Konfigurasi Passport untuk Autentikasi
 app.use(passport.initialize());
 app.use(passport.session());
 passport.use(new LocalStrategy(Pengguna.authenticate()));
@@ -79,18 +91,15 @@ app.use((req, res, next) =>{
     next();
 })
 
+//Konnfigurasi Routing
 app.use('/', penggunaRoutes);
 app.use('/film', filmRoutes);
 app.use('/katalog', katalogRoutes); 
 
-//Dummy data
-films = require('./dummy.js');
-
-films = films.slice(0,7);
-
-app.get('/', (req, res) => {
+app.get('/', catchAsync(async (req, res) => {
+    films = await Film.find({}).sort({'rating': -1}).limit(50);
     res.render('home', films)
-})
+}));
 
 app.all('*', (req, res, next) => {
     next(new ExpressError('404 Page Not Found', 404))
@@ -104,6 +113,7 @@ app.use((err, req, res, next) => {
 
 const port = process.env.PORT || 3000;
 
+//Start Server
 app.listen(port, ()=>{
     console.log('listening on http://localhost:3000');
 })

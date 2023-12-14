@@ -3,19 +3,18 @@ const router = express.Router({mergeParams: true});
 const catchAsync = require('../utils/catchAsync');
 const passport = require('passport');
 const film = require('../controllers/film');
-
-const films = require('../dummy.js');
+const { isLoggedIn } = require('../middleware');
 
 router.route('/populer')
-    .get(film.renderFilmPopuler);
+    .get(catchAsync(film.renderFilmPopuler));
 
 router.route('/rekomendasi')
-    .get(film.renderFilmRekomendasi);
+    .get(isLoggedIn, catchAsync(film.renderFilmRekomendasi));
 
 router.route('/cari')
-    .get(film.renderFilmCari);
+    .get(catchAsync(film.renderFilmCari));
 
 router.route('/:id')
-    .get(film.renderDetailFilm);
+    .get(catchAsync(film.renderDetailFilm));
 
 module.exports = router;

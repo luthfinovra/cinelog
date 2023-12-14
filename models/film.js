@@ -8,9 +8,10 @@ const FilmSchema = new Schema({
     rating: Number,
     tahunRilis: Number,
     sutradara: String,
-    linkCover: String,
+    link_cover: String,
     genre: [String],
     sinopsis: String,
+    pemeran: [Object],
 })
 
 module.exports = mongoose.model('Film', FilmSchema);
