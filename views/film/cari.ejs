@@ -4,7 +4,7 @@
         <h2>< Kembali</h2>
     </a>
     <br>
-    <h4>Hasil pencarian: <%= query %></h4>
+    <h4 id="header">Hasil pencarian: <%= query %></h4>
     <div class="wrapper">
         <div class="row">
             <% for (let film of result) { %>
@@ -12,14 +12,14 @@
                             <a  href="/film/<%= film.id %>" title="<%= film.judul %>">
                             <img src="https://image.tmdb.org/t/p/w220_and_h330_face<%= film.link_cover %>" class="card-img-top" srcset="/t/p/w220_and_h330_face<%= film.link_cover %> 2x" alt="<%= film.judul %>">
                             <div class="card-body">
-                            <h5 class="card-title"><%= film.judul %></h5>
+                            <h5 class="card-title two-line"><%= film.judul %></h5>
                             <p class="card-text"><%= film.tahunRilis %> | <img src="/icon/rating.svg" class="rating"> <%= film.rating.toFixed(1)  %></p>
                             </div></a>
                         </div>
             <% } %>
         </div>
         <% if (result == "") { %>
-            <h4>Pencarian tidak ditemukan</h4>
+            <h4 id="header">Pencarian tidak ditemukan</h4>
         <% } %>
     </div>
 </div>

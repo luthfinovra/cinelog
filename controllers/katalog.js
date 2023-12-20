@@ -81,3 +81,36 @@ module.exports.renderEditDetail = async (req, res) => {
     const data = await Katalog.findById(req.params.id).populate('film');
     res.render('katalog/editDetail', {data});
 }
+
+module.exports.editKatalog = async (req, res) => {
+    const katalogId = req.params.id;
+    const body = req.body.katalog;
+    const selectedResults = JSON.parse(req.body.selectedResults);
+
+    try {
+        const existingKatalog = await Katalog.findById(katalogId);
+
+        if (!existingKatalog) {
+            return res.status(404).send('Katalog not found');
+        }
+
+        // Map the selected film IDs to ObjectId and update the film array
+        const updatedFilmIds = Object.keys(selectedResults).map(filmId => new ObjectId(filmId));
+        existingKatalog.film = updatedFilmIds;
+
+        // Update other properties
+        existingKatalog.judul = body.judul;
+        existingKatalog.deskripsi = body.deskripsi;
+
+        // Save the updated Katalog data back to the database
+        await existingKatalog.save();
+
+        // Redirect to the Katalog details page
+        req.flash('success', 'Berhasil Mengubah Katalog')
+        res.redirect(`/katalog/${katalogId}`);
+    } catch (error) {
+        // Handle errors
+        console.error(error);
+        res.status(500).send('Internal Server Error');
+    }
+};

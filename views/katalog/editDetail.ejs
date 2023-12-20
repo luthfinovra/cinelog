@@ -1,46 +1,65 @@
 <% layout('layout/boilerplate') %>
     <link rel="stylesheet" href="/stylesheets/katalog.css">
-    <div class="container-fluid">
-        <a href="/katalog">
-            <h2>
-                < Kembali</h2>
-        </a>
-        <br>
-        <div class="wrapper">
-            <div class="d-flex justify-content-between align-items-center" id="header">
-                <h3>
-                    <%= data.judul %>
-                </h3>
-                <div>
-                    <a href="/katalog/<%= data._id %>" class="btn btn-primary">Cancel</a>
-                    <form action="/katalog/<%= data._id %>?_method=DELETE" method="POST" style="display: inline;">
-                        <button class="btn btn-danger">Hapus</button>
-                    </form>
-                </div>
-            </div>
-            <p>
-                <%= data.deskripsi %>
-            </p>
-            <div class="row">
-                <% for(let film of data.film) { %>
 
-                    <div class="poster card" style="width: 10rem;">
-                        <a href="/film/<%= film.id %>" title="<%= film.judul %>">
-                            <img src="https://image.tmdb.org/t/p/w220_and_h330_face<%= film.link_cover %>"
-                                class="card-img-top" srcset="/t/p/w220_and_h330_face<%= film.link_cover %> 2x"
-                                alt="<%= film.judul %>">
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    <%= film.judul %>
-                                </h5>
-                                <p class="card-text">
-                                    <%= film.tahunRilis %> | <img src="/icon/rating.svg" class="rating"> <%= film.rating.toFixed(1) %>
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <% } %>
+    <div class="container-fluid">
+        <div class="d-flex justify-content-between align-items-center" id="header">
+            <h2>Ubah Katalog</h2>
+            <div>
+                <a href="/katalog/" class="btn btn-danger ml-auto">Cancel</a>
             </div>
         </div>
+        <div class="col-md-9 my-3">
+            <form action="/katalog/edit/<%= data._id %>?_method=PUT" method="POST" novalidate class="validated-form">
+                <div class="mb-3">
+                    <label class="form-label" for="judul">Judul</label>
+                    <input class="form-control" type="text" id="judul" name="katalog[judul]" required
+                        value="<%= data.judul %>">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="deskripsi">Deskripsi</label>
+                    <textarea class="form-control" type="text" id="deskripsi" name="katalog[deskripsi]" required
+                        style="height: 200px;"><%= data.deskripsi %></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="film">Tambah Film</label>
+                    <div class="row d-flex" style="display: inline;" id="tempAdded">
+                        <div class="poster card" style="width: 10rem;" data-toggle="modal" data-target="#searchModal">
+                            <img src="/icon/tile.svg" class="card-img-top" alt="..." id="posterImage">
+                            <div class="card-body">
+                                <h5 class="card-title">Cari Film</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input type="hidden" name="selectedResults" id="selectedResultsField" value="">
+                <div class="mb-3">
+                    <button class="btn btn-success" id="submitButton">Simpan Katalog</button>
+                </div>
+            </form>
+            <form action="/katalog/<%= data._id %>?_method=DELETE" method="POST">
+                <button class="btn btn-danger" id="Hapus">Delete</button>
+            </form>
+        </div>
     </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <div class="modal-content">
+            <div class="d-flex justify-content-between align-items-center" id="header">
+                <h2>Tambahkan Film ke Katalog</h2>
+                <span class="close">&times;</span>
+            </div>
+            <form action="" id="searchForm">
+                <input class="form-control my-3 mx-auto" type="text" name="query" id="searchFilmModal"
+                    placeholder="Cari Film">
+            </form>
+            <div class="my-1 mx-3" id="searchResults" style="max-height: 75%; overflow-y: auto;">
+            </div>
+            <button class="btn btn-primary my-4 me-5" style="display: none; position: absolute; bottom: 0; right: 0;"
+                id="addButtonModal">Tambah</button>
+        </div>
     </div>
+    <input type="hidden" id="data" value="<%= JSON.stringify(data) %>">
+
+    <script src="/javascripts/editKatalog.js"></script>

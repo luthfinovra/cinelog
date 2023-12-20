@@ -5,14 +5,14 @@
         </a>
         <br>
         <div class="wrapper">
-            <h2>Daftar Film Rekomendasi</h2> 
+            <h2 id="header">Daftar Film Rekomendasi</h2> 
             <div class="row">
                 <% for (let film of films) { %>
                             <div class="poster card"style="width: 10rem;">
                                 <a  href="/film/<%= film.id %>" title="<%= film.judul %>">
                                 <img src="https://image.tmdb.org/t/p/w220_and_h330_face<%= film.link_cover %>" class="card-img-top" srcset="/t/p/w220_and_h330_face<%= film.link_cover %> 2x" alt="<%= film.judul %>">
                                 <div class="card-body">
-                                <h5 class="card-title"><%= film.judul %></h5>
+                                <h5 class="card-title two-line"><%= film.judul %></h5>
                                 <p class="card-text"><%= film.tahunRilis %> | <img src="/icon/rating.svg" class="rating"> <%= film.rating.toFixed(1)  %></p>
                                 </div></a>
                             </div>

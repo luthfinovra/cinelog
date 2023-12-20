@@ -113,6 +113,12 @@ p .rating{
     width: 100%;
 }
 
+#header{
+    border-bottom: solid;
+    border-image:  linear-gradient(to right, #222831 30%, #30475E 65%, #F05454 25%) 5;
+    padding-bottom: 0.1em;
+}
+
 .two-line {
     display: -webkit-box;
     -webkit-line-clamp: 2;

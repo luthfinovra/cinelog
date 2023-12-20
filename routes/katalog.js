@@ -14,6 +14,7 @@ router.route('/edit')
 
 router.route('/edit/:id')
     .get(isLoggedIn, catchAsync(katalog.renderEditDetail))
+    .put(isLoggedIn, catchAsync(katalog.editKatalog))
 
 router.route('/new')
     .get(isLoggedIn, katalog.renderNewKatalogForm)

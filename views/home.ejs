@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="wrapper">
             <a href="/film/populer">
-                <h2>Daftar Film Populer ></h2>
+                <h2 id="header">Daftar Film Populer ></h2>
             </a>
             <div class="row">
                 <% filmPopuler = films.slice(0,7) %>
@@ -13,7 +13,7 @@
                                 class="card-img-top" srcset="/t/p/w220_and_h330_face<%= film.link_cover %> 2x"
                                 alt="<%= film.judul %>">
                             <div class="card-body">
-                                <h5 class="card-title">
+                                <h5 class="card-title two-line">
                                     <%= film.judul %>
                                 </h5>
                                 <p class="card-text">
@@ -28,11 +28,11 @@
         </div>
         <div class="wrapper">
             <% if(!currentUser){ %>
-                <h2>Rekomendasi untuk Anda</h2>
+                <h2 id="header">Rekomendasi untuk Anda</h2>
                 <h3>Login Untuk mendapatkan Rekomendasi Film!</h3>
                 <% } else { %>
                     <a href="/film/rekomendasi">
-                        <h2>Rekomendasi untuk Anda ></h2>
+                        <h2 id="header">Rekomendasi untuk Anda ></h2>
                     </a>
                     <div class="row">
                         <% filmRekomendasi = films.slice(15,22) %>
@@ -43,7 +43,7 @@
                                         class="card-img-top" srcset="/t/p/w220_and_h330_face<%= film.link_cover %> 2x"
                                         alt="<%= film.judul %>">
                                     <div class="card-body">
-                                        <h5 class="card-title">
+                                        <h5 class="card-title two-line">
                                             <%= film.judul %>
                                         </h5>
                                         <p class="card-text">
