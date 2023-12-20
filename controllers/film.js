@@ -27,6 +27,13 @@ module.exports.renderFilmCari = async (req, res) => {
         return res.render('film/cari', {query, result});
     }
 
-    const result = await Film.find({'judul': {$regex: `${query}`}}).sort({'rating': -1}).limit(50);
-    res.render('film/cari', {query, result});
+    const isModalSearch = req.query.modal === 'true';
+
+    if(isModalSearch){
+        const result = await Film.find({'judul': {$regex: `${query}`, $options: 'i'}}, ['judul', 'tahunRilis', 'rating', 'link_cover']).sort({'rating': -1}).limit(50);
+        res.json(result);
+    }else{
+        const result = await Film.find({'judul': {$regex: `${query}`, $options: 'i'}}).sort({'rating': -1}).limit(50);
+        res.render('film/cari', {query, result});
+    }
 }
