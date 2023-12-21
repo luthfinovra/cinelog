@@ -5,56 +5,62 @@
                 <h2 id="header">Daftar Film Populer ></h2>
             </a>
             <div class="row">
-                <% filmPopuler = films.slice(0,7) %>
-                <% for (let film of filmPopuler) { %>
-                    <div class="poster card" style="width: 11rem;">
-                        <a href="/film/<%= film.id %>" title="<%= film.judul %>">
-                            <img src="https://image.tmdb.org/t/p/w220_and_h330_face<%= film.link_cover %>"
-                                class="card-img-top" srcset="/t/p/w220_and_h330_face<%= film.link_cover %> 2x"
-                                alt="<%= film.judul %>">
-                            <div class="card-body">
-                                <h5 class="card-title two-line">
-                                    <%= film.judul %>
-                                </h5>
-                                <p class="card-text">
-                                    <%= film.tahunRilis %> | <img src="/icon/rating.svg" class="rating">
-                                        <%= film.rating.toFixed(1) %>
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <% } %>
+                    <% for (let film of popularFilms) { %>
+                        <div class="poster card" style="width: 11rem;">
+                            <a href="/film/<%= film.id %>" title="<%= film.judul %>">
+                                <img src="https://image.tmdb.org/t/p/w220_and_h330_face<%= film.link_cover %>"
+                                    class="card-img-top" srcset="/t/p/w220_and_h330_face<%= film.link_cover %> 2x"
+                                    alt="<%= film.judul %>">
+                                <div class="card-body">
+                                    <h5 class="card-title two-line">
+                                        <%= film.judul %>
+                                    </h5>
+                                    <p class="card-text">
+                                        <%= film.tahunRilis %> | <img src="/icon/rating.svg" class="rating">
+                                            <%= film.rating.toFixed(1) %>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <% } %>
             </div>
         </div>
         <div class="wrapper">
             <% if(!currentUser){ %>
-                <h2 id="header">Rekomendasi untuk Anda</h2>
-                <h3>Login Untuk mendapatkan Rekomendasi Film!</h3>
-                <% } else { %>
-                    <a href="/film/rekomendasi">
-                        <h2 id="header">Rekomendasi untuk Anda ></h2>
+                <a href="/login/">
+                    <h2 id="header">Login Untuk mendapatkan Rekomendasi Film! ></h2>
+                </a>
+                <% } else if (!hasKatalog) { %>
+                    <a href="/katalog/">
+                        <h2 id="header">Miliki Katalog Pribadi untuk Mendapatkan Rekomendasi Film ></h2>
                     </a>
-                    <div class="row">
-                        <% filmRekomendasi = films.slice(15,22) %>
-                        <% for (let film of filmRekomendasi) { %>
-                            <div class="poster card" style="width: 11rem;">
-                                <a href="/film/<%= film.id %>" title="<%= film.judul %>">
-                                    <img src="https://image.tmdb.org/t/p/w220_and_h330_face<%= film.link_cover %>"
-                                        class="card-img-top" srcset="/t/p/w220_and_h330_face<%= film.link_cover %> 2x"
-                                        alt="<%= film.judul %>">
-                                    <div class="card-body">
-                                        <h5 class="card-title two-line">
-                                            <%= film.judul %>
-                                        </h5>
-                                        <p class="card-text">
-                                            <%= film.tahunRilis %> | <img src="/icon/rating.svg" class="rating">
-                                                <%= film.rating.toFixed(1) %>
-                                        </p>
+                        
+                    <% } else { %>
+                        <a href="/film/rekomendasi">
+                                <h2 id="header">Rekomendasi untuk Anda ></h2>
+                            </a>
+                            
+                        <div class="row">
+                                <% for (let film of films) { %>
+                                    <div class="poster card" style="width: 11rem;">
+                                        <a href="/film/<%= film.id %>" title="<%= film.judul %>">
+                                            <img src="https://image.tmdb.org/t/p/w220_and_h330_face<%= film.link_cover %>"
+                                                class="card-img-top"
+                                                srcset="/t/p/w220_and_h330_face<%= film.link_cover %> 2x"
+                                                alt="<%= film.judul %>">
+                                            <div class="card-body">
+                                                <h5 class="card-title two-line">
+                                                    <%= film.judul %>
+                                                </h5>
+                                                <p class="card-text">
+                                                    <%= film.tahunRilis %> | <img src="/icon/rating.svg" class="rating">
+                                                        <%= film.rating.toFixed(1) %>
+                                                </p>
+                                            </div>
+                                        </a>
                                     </div>
-                                </a>
-                            </div>
-                            <% } %>
-                    </div>
-                    <% } %>
+                                    <% } %>
+                        </div>
+                        <% } %>
         </div>
     </div>

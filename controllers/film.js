@@ -1,21 +1,21 @@
 const Film = require('../models/film');
+const Pengguna = require('../models/pengguna');
 
 const ITEMS_PER_PAGE = 35;
 
 module.exports.renderDetailFilm = async (req, res) => {
-    data = await Film.find({id: req.params.id});
+    data = await Film.find({ id: req.params.id });
     data = data[0];
-    res.render('film/detail', {data});
+    res.render('film/detail', { data });
 }
 
 module.exports.renderFilmPopuler = async (req, res) => {
-    const page = parseInt(req.query.page) || 1; // Get the page from the query parameter, default to 1
-    const skip = (page - 1) * ITEMS_PER_PAGE; // Calculate the number of items to skip
+    const page = parseInt(req.query.page) || 1;
+    const skip = (page - 1) * ITEMS_PER_PAGE;
 
     try {
-        const totalFilms = await Film.countDocuments(); // Get the total number of films
+        const totalFilms = await Film.countDocuments();
 
-        // Fetch films for the current page using skip and limit
         const films = await Film.find({}).sort({ 'rating': -1 }).skip(skip).limit(ITEMS_PER_PAGE);
 
         res.render('film/populer', {
@@ -32,53 +32,98 @@ module.exports.renderFilmPopuler = async (req, res) => {
         res.status(500).send('Internal Server Error');
     }
 };
-module.exports.renderFilmRekomendasi = async (req, res) => {
-    const page = parseInt(req.query.page) || 1; // Get the page from the query parameter, default to 1
-    const skip = (page - 1) * ITEMS_PER_PAGE; // Calculate the number of items to skip
+
+module.exports.renderFilmRekomendasi = async (req) => {
+    const page = parseInt(req.query.page) || 1; 
+    const skip = (page - 1) * ITEMS_PER_PAGE;
 
     try {
-        const totalFilms = await Film.countDocuments(); // Get the total number of films
+        let hasKatalog = false;
+        let recommendedGenres = [];
 
-        // Fetch films for the current page using skip and limit
-        const films = await Film.find({}).sort({ 'rating': -1 }).skip(skip).limit(ITEMS_PER_PAGE);
+        if (req.user) {
+            const user = await Pengguna.findById(req.user._id).populate({
+                path: 'katalog',
+                populate: {
+                    path: 'film',
+                    model: 'Film',
+                },
+            });
 
-        res.render('film/rekomendasi', {
+            if (user) {
+                if (user.katalog.length > 0) {
+                    hasKatalog = true;
+
+                    const allGenres = user.katalog.reduce((genres, katalog) => {
+                        katalog.film.forEach(film => {
+                            genres.push(...film.genre);
+                        });
+                        return genres;
+                    }, []);
+
+                    const genreCounts = {};
+                    allGenres.forEach(genre => {
+                        genreCounts[genre] = (genreCounts[genre] || 0) + 1;
+                    });
+
+                    console.log(genreCounts);
+                    // Pilih Top 3 genre
+                    recommendedGenres = Object.keys(genreCounts)
+                        .sort((a, b) => genreCounts[b] - genreCounts[a])
+                        .slice(0, 3);
+                }
+            }
+        }
+
+        console.log(recommendedGenres);
+        const films = recommendedGenres.length > 0
+            ? await Film.find({ genre: { $in: recommendedGenres } })
+                  .sort({ rating: -1 })
+                  .skip(skip)
+                  .limit(ITEMS_PER_PAGE)
+            : [];
+
+        const dummy = recommendedGenres.length > 0
+        ? await Film.find({ genre: { $in: recommendedGenres } })
+              .sort({ rating: -1 })
+              .skip(skip)
+            : [];
+        const totalFilms = dummy.length;
+
+        return {
             films,
-            currentPage: page,
-            hasNextPage: ITEMS_PER_PAGE * page < totalFilms,
-            hasPreviousPage: page > 1,
-            nextPage: page + 1,
-            previousPage: page - 1,
-            lastPage: Math.ceil(totalFilms / ITEMS_PER_PAGE)
-        });
+            hasKatalog,
+            totalFilms,
+        };
+
     } catch (error) {
         console.error(error);
-        res.status(500).send('Internal Server Error');
+        throw error; 
     }
-}
+};
+
 
 module.exports.renderFilmCari = async (req, res) => {
     let query = req.query.search;
-    
+
     if (!query) {
         query = 'Anda tidak mencari apapun';
         let result = ""
-        return res.render('film/cari', {query, result});
+        return res.render('film/cari', { query, result });
     }
-    
+
     const isModalSearch = req.query.modal === 'true';
-    
-    if(isModalSearch){
-        const result = await Film.find({'judul': {$regex: `${query}`, $options: 'i'}}, ['judul', 'tahunRilis', 'rating', 'link_cover']).sort({'rating': -1}).limit(50);
+
+    if (isModalSearch) {
+        const result = await Film.find({ 'judul': { $regex: `${query}`, $options: 'i' } }, ['judul', 'tahunRilis', 'rating', 'link_cover']).sort({ 'rating': -1 }).limit(50);
         res.json(result);
-    }else{
+    } else {
         try {
-            const page = parseInt(req.query.page) || 1; // Get the page from the query parameter, default to 1
-            const skip = (page - 1) * ITEMS_PER_PAGE; // C
-            
-            // Fetch films for the current page using skip and limit
-            const totalFilms = await Film.find({'judul': {$regex: `${query}`, $options: 'i'}}).sort({'rating': -1}).countDocuments(); // Get the total number of films
-            const result = await Film.find({'judul': {$regex: `${query}`, $options: 'i'}}).sort({'rating': -1}).skip(skip).limit(ITEMS_PER_PAGE);
+            const page = parseInt(req.query.page) || 1;
+            const skip = (page - 1) * ITEMS_PER_PAGE;
+
+            const totalFilms = await Film.find({ 'judul': { $regex: `${query}`, $options: 'i' } }).sort({ 'rating': -1 }).countDocuments();
+            const result = await Film.find({ 'judul': { $regex: `${query}`, $options: 'i' } }).sort({ 'rating': -1 }).skip(skip).limit(ITEMS_PER_PAGE);
             res.render('film/cari', {
                 query,
                 result,

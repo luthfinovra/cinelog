@@ -22,6 +22,7 @@ const filmRoutes = require('./routes/film.js');
 //Utility
 const ExpressError = require('./utils/ExpressError.js');
 const catchAsync = require('./utils/catchAsync.js');
+const { renderFilmRekomendasi } = require('./controllers/film.js');
 
 //Connect to Database
 const dbUrl = process.env.DB_URL || `mongodb://127.0.0.1:27017/cinelog`;
@@ -97,8 +98,20 @@ app.use('/film', filmRoutes);
 app.use('/katalog', katalogRoutes); 
 
 app.get('/', catchAsync(async (req, res) => {
-    films = await Film.find({}).sort({'rating': -1}).limit(50);
-    res.render('home', films)
+    try {
+        const { films, hasKatalog } = await renderFilmRekomendasi(req);
+
+        const popularFilms = await Film.find({}).sort({ rating: -1 }).limit(50);
+        
+        res.render('home', {
+            films: films.slice(0, 7),
+            popularFilms: popularFilms.slice(0, 7),
+            hasKatalog,
+        });
+    } catch (error) {
+        console.error(error);
+        res.status(500).send('Internal Server Error');
+    }
 }));
 
 app.all('*', (req, res, next) => {
