@@ -11,9 +11,9 @@
                 <h3>
                     <%= data.judul %>
                 </h3>
-                <a href="/katalog/edit/" class="btn btn-primary">Ubah</a>
+                <a href="/katalog/edit/<%= data._id %>" class="btn btn-primary">Ubah</a>
             </div>
-            <p>
+            <p style="overflow:auto;">
                 <%= data.deskripsi %>
             </p>
             <div class="row">
@@ -25,11 +25,11 @@
                                 class="card-img-top" srcset="/t/p/w220_and_h330_face<%= film.link_cover %> 2x"
                                 alt="<%= film.judul %>">
                             <div class="card-body">
-                                <h5 class="card-title">
+                                <h5 class="card-title two-line">
                                     <%= film.judul %>
                                 </h5>
                                 <p class="card-text">
-                                    <%= film.tahunRilis %> | <%= film.rating %>
+                                    <%= film.tahunRilis %> | <img src="/icon/rating.svg" class="rating"> <%= film.rating.toFixed(1) %>
                                 </p>
                             </div>
                         </a>

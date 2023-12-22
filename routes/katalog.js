@@ -3,17 +3,24 @@ const router = express.Router({mergeParams: true});
 const catchAsync = require('../utils/catchAsync');
 const passport = require('passport');
 const katalog = require('../controllers/katalog');
+const { isLoggedIn } = require('../middleware');
 
 router.route('/')
-    .get(katalog.renderShowKatalog);
+    .get(isLoggedIn, catchAsync(katalog.renderShowKatalog))
+    .post(isLoggedIn, catchAsync(katalog.createNewKatalog))
 
 router.route('/edit')
-    .get(katalog.renderEditKatalog);
+    .get(isLoggedIn, catchAsync(katalog.renderEditKatalog))
+
+router.route('/edit/:id')
+    .get(isLoggedIn, catchAsync(katalog.renderEditDetail))
+    .put(isLoggedIn, catchAsync(katalog.editKatalog))
 
 router.route('/new')
-    .get(katalog.renderNewKatalogForm);
+    .get(isLoggedIn, katalog.renderNewKatalogForm)
 
 router.route('/:id')
-    .get(katalog.renderKatalogDetail);
+    .get(isLoggedIn, catchAsync(katalog.renderKatalogDetail))
+    .delete(isLoggedIn, catchAsync(katalog.deleteKatalog))
 
 module.exports = router;

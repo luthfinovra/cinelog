@@ -2,36 +2,65 @@
     <div class="container-fluid">
         <div class="wrapper">
             <a href="/film/populer">
-                <h2>Daftar film populer (dummy) ></h2> 
+                <h2 id="header">Daftar Film Populer ></h2>
             </a>
             <div class="row">
-                <% for (let film of films) { %>
-                            <div class="poster card"style="width: 10rem;">
-                                <a  href="/film/<%= film.id %>" title="<%= film.judul %>">
-                                <img src="https://image.tmdb.org/t/p/w220_and_h330_face<%= film.link_cover %>" class="card-img-top" srcset="/t/p/w220_and_h330_face<%= film.link_cover %> 2x" alt="<%= film.judul %>">
+                    <% for (let film of popularFilms) { %>
+                        <div class="poster card" style="width: 11rem;">
+                            <a href="/film/<%= film.id %>" title="<%= film.judul %>">
+                                <img src="https://image.tmdb.org/t/p/w220_and_h330_face<%= film.link_cover %>"
+                                    class="card-img-top" srcset="/t/p/w220_and_h330_face<%= film.link_cover %> 2x"
+                                    alt="<%= film.judul %>">
                                 <div class="card-body">
-                                <h5 class="card-title"><%= film.judul %></h5>
-                                <p class="card-text"><%= film.tahunRilis %> | <%= film.rating  %></p>
-                                </div></a>
-                            </div>
-                    <% } %>
+                                    <h5 class="card-title two-line">
+                                        <%= film.judul %>
+                                    </h5>
+                                    <p class="card-text">
+                                        <%= film.tahunRilis %> | <img src="/icon/rating.svg" class="rating">
+                                            <%= film.rating.toFixed(1) %>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <% } %>
             </div>
         </div>
         <div class="wrapper">
-        <a href="/film/rekomendasi">
-            <h2>Rekomendasi untuk anda (dummy) ></h2> 
-        </a>
-        <div class="row">
-            <% for (let film of films) { %>
-                        <div class="poster card"style="width: 10rem;">
-                            <a  href="/film/<%= film.id %>" title="<%= film.judul %>">
-                            <img src="https://image.tmdb.org/t/p/w220_and_h330_face<%= film.link_cover %>" class="card-img-top" srcset="/t/p/w220_and_h330_face<%= film.link_cover %> 2x" alt="<%= film.judul %>">
-                            <div class="card-body">
-                              <h5 class="card-title"><%= film.judul %></h5>
-                              <p class="card-text"><%= film.tahunRilis %> | <%= film.rating  %></p>
-                            </div></a>
+            <% if(!currentUser){ %>
+                <a href="/login/">
+                    <h2 id="header">Login Untuk mendapatkan Rekomendasi Film! ></h2>
+                </a>
+                <% } else if (!hasKatalog) { %>
+                    <a href="/katalog/">
+                        <h2 id="header">Miliki Katalog Pribadi untuk Mendapatkan Rekomendasi Film ></h2>
+                    </a>
+                        
+                    <% } else { %>
+                        <a href="/film/rekomendasi">
+                                <h2 id="header">Rekomendasi untuk Anda ></h2>
+                            </a>
+                            
+                        <div class="row">
+                                <% for (let film of films) { %>
+                                    <div class="poster card" style="width: 11rem;">
+                                        <a href="/film/<%= film.id %>" title="<%= film.judul %>">
+                                            <img src="https://image.tmdb.org/t/p/w220_and_h330_face<%= film.link_cover %>"
+                                                class="card-img-top"
+                                                srcset="/t/p/w220_and_h330_face<%= film.link_cover %> 2x"
+                                                alt="<%= film.judul %>">
+                                            <div class="card-body">
+                                                <h5 class="card-title two-line">
+                                                    <%= film.judul %>
+                                                </h5>
+                                                <p class="card-text">
+                                                    <%= film.tahunRilis %> | <img src="/icon/rating.svg" class="rating">
+                                                        <%= film.rating.toFixed(1) %>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <% } %>
                         </div>
-                <% } %>
-        </div>
+                        <% } %>
         </div>
     </div>

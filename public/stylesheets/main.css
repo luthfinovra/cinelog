@@ -27,6 +27,16 @@ body {
     border-color: #c82333;
 }
 
+.btn-success{
+    border: 0.1em solid transparent;
+}
+
+.btn-success:hover{
+    background-color: #D9D9D9;
+    color: #198754;
+    border: 0.1em solid;
+    border-color: #198754;
+}
 a {
     color: #30475E;
 }
@@ -53,4 +63,104 @@ a {
 
 .wrapper{
     margin-bottom: 30px;
+}
+
+p .rating{
+    object-fit: cover;
+    width: 16px;
+    height: 16px;
+    margin-bottom: 6px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 70%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #posterImage {
+    cursor: pointer;
+}
+
+#searchFilmModal {
+    width: 50%;
+}
+
+#border {
+    width: 100%;
+}
+
+#header{
+    border-bottom: solid;
+    border-image:  linear-gradient(to right, #222831 30%, #30475E 65%, #F05454 25%) 5;
+    padding-bottom: 0.1em;
+}
+
+.two-line {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.pagination > li > a
+{
+    background-color: white;
+    color: #30475E;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    color: #5a5a5a;
+    background-color: #eee;
+    border-color: #ddd;
+}
+
+.pagination > .active > a
+{
+    color: white;
+    background-color: #30475E !Important;
+    border: solid 1px #30475E !Important;
+}
+
+.pagination > .active > a:hover
+{
+    background-color: #30475E !Important;
+    border: solid 1px #222831;
 }
