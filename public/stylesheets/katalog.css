@@ -15,11 +15,7 @@ a {
     transition: border-color 0.3s, color 0.3s;
 }
 
-#header{
-    border-bottom: solid;
-    border-image:  linear-gradient(to right, #222831 30%, #30475E 65%, #F05454 25%) 5;
-    padding-bottom: 0.1em;
-}
+
 
 #Ubah, #Hapus{
     width: 6em;
