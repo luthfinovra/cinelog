@@ -130,7 +130,7 @@ function renderSelected(selectedResults) {
     addFilmElement.innerHTML = `
         <img src="/icon/tile.svg" class="card-img-top" alt="..." id="posterImage">
         <div class="card-body">
-            <h5 class="card-title">Cari Film</h5>
+            <h5 class="card-title">Tambah Film</h5>
         </div>
     `;
     selectedContainer.appendChild(addFilmElement);
@@ -149,7 +149,7 @@ function createPosterCardElement(film) {
     posterCardElement.innerHTML = `
     
             <img src="https://image.tmdb.org/t/p/w220_and_h330_face${film.link_cover}"
-                class="card-img-top" srcset="/t/p/w220_and_h330_face${film.link_cover} 2x"
+                class="card-img-top" srcset="https://image.tmdb.org/t/p/w220_and_h330_face${film.link_cover} 2x"
                 alt="${film.judul}">
             <div class="card-body">
                 <h5 class="card-title two-line">${film.judul}</h5>

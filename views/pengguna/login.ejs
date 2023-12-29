@@ -14,9 +14,6 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <%- include('../partials/flash') %>
-    </div>
     <form action="/login" method="POST" class="validated-form" novalidate>
         <div class="d-flex flex-column justify-content-center align-items-center vh-100">
             <div class="row align-items-center mb-5">
@@ -49,6 +46,9 @@
                             </span>
                             <input type="password" class="form-control" id="password" name="password" aria-describedby="password" placeholder="Password" required>
                         </div>
+                </div>
+                <div class="mb-3">
+                    <%- include('../partials/flash') %>
                 </div>
                     <div class="mb-3">
                         <div class="input-group">
