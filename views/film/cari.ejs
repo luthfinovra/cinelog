@@ -4,7 +4,11 @@
         <h2>< Kembali</h2>
     </a>
     <br>
-    <h4 id="header">Hasil pencarian: <%= query %></h4>
+    <% if (genreQuery == ""){ %>
+        <h4 id="header">Hasil pencarian: Judul '<%= query %>', semua genre</h4>
+    <% } else { %>
+        <h4 id="header">Hasil pencarian: Judul '<%= query %>', genre '<%= genreQuery %>'</h4>
+    <% }%>
     <div class="wrapper">
         <div class="row">
             <% for (let film of result) { %>

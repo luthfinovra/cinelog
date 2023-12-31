@@ -15,6 +15,21 @@
           <!-- Search bar in the middle -->
           <form class="d-flex justify-content-center validated-form" action="/film/cari" method="GET" novalidate>
             <input class="form-control me-2" type="text" name="search" placeholder="Judul Film" aria-label="Search" required>
+            <div class="input-group">
+              <label class="input-group-text" for="genreSelect">Genre</label>
+              <select class="form-select" id="genreSelect" name="genre">
+                  <option value="" selected>Semua Genre</option>
+                  <option value="Action">Action</option>
+                  <option value="Animation">Animation</option>
+                  <option value="Comedy">Comedy</option>
+                  <option value="Drama">Drama</option>
+                  <option value="Romance">Romance</option>
+                  <option value="Fantasy">Fantasy</option>
+                  <option value="Thriller">Thriller</option>
+                  <option value="Horror">Horror</option>
+                  <option value="Mystery">Mystery</option>
+              </select>
+          </div>
             <button class="btn btn-primary" type="submit">Search</button>
           </form>
           

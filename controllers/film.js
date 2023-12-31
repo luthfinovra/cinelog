@@ -105,12 +105,7 @@ module.exports.renderFilmRekomendasi = async (req) => {
 
 module.exports.renderFilmCari = async (req, res) => {
     let query = req.query.search;
-
-    if (!query) {
-        query = 'Anda tidak mencari apapun';
-        let result = ""
-        return res.render('film/cari', { query, result });
-    }
+    let genreQuery = req.query.genre;
 
     const isModalSearch = req.query.modal === 'true';
 
@@ -122,10 +117,16 @@ module.exports.renderFilmCari = async (req, res) => {
             const page = parseInt(req.query.page) || 1;
             const skip = (page - 1) * ITEMS_PER_PAGE;
 
-            const totalFilms = await Film.find({ 'judul': { $regex: `${query}`, $options: 'i' } }).sort({ 'rating': -1 }).countDocuments();
-            const result = await Film.find({ 'judul': { $regex: `${query}`, $options: 'i' } }).sort({ 'rating': -1 }).skip(skip).limit(ITEMS_PER_PAGE);
+            // Modifikasi query pencarian untuk menambahkan genre
+            const genreFilter = genreQuery ? { 'genre': genreQuery } : {};
+            const titleFilter = { 'judul': { $regex: `${query}`, $options: 'i' } };
+
+            const totalFilms = await Film.find({ ...titleFilter, ...genreFilter }).sort({ 'rating': -1 }).countDocuments();
+            const result = await Film.find({ ...titleFilter, ...genreFilter }).sort({ 'rating': -1 }).skip(skip).limit(ITEMS_PER_PAGE);
+
             res.render('film/cari', {
                 query,
+                genreQuery,
                 result,
                 currentPage: page,
                 hasNextPage: ITEMS_PER_PAGE * page < totalFilms,
