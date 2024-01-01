@@ -107,37 +107,71 @@ module.exports.renderFilmCari = async (req, res) => {
     let query = req.query.search;
     let genreQuery = req.query.genre;
 
-    const isModalSearch = req.query.modal === 'true';
+    if (query == ""){
+        
+        const isModalSearch = req.query.modal === 'true';
 
-    if (isModalSearch) {
-        const result = await Film.find({ 'judul': { $regex: `${query}`, $options: 'i' } }, ['judul', 'tahunRilis', 'rating', 'link_cover']).sort({ 'rating': -1 }).limit(50);
-        res.json(result);
-    } else {
-        try {
-            const page = parseInt(req.query.page) || 1;
-            const skip = (page - 1) * ITEMS_PER_PAGE;
+        if (isModalSearch) {
+            // Pencarian untuk modal (Ajax)
+            const result = await Film.find({ 'genre': genreQuery }, ['judul', 'tahunRilis', 'rating', 'link_cover']).sort({ 'rating': -1 }).limit(50);
+            res.json(result);
+        } else {
+            try {
+                const page = parseInt(req.query.page) || 1;
+                const skip = (page - 1) * ITEMS_PER_PAGE;
+    
+                // Pencarian berdasarkan genre
+                const totalFilms = await Film.find({ 'genre': genreQuery }).sort({ 'rating': -1 }).countDocuments();
+                const result = await Film.find({ 'genre': genreQuery }).sort({ 'rating': -1 }).skip(skip).limit(ITEMS_PER_PAGE);
+    
+                res.render('film/cari', {
+                    query, 
+                    genreQuery,
+                    result,
+                    currentPage: page,
+                    hasNextPage: ITEMS_PER_PAGE * page < totalFilms,
+                    hasPreviousPage: page > 1,
+                    nextPage: page + 1,
+                    previousPage: page - 1,
+                    lastPage: Math.ceil(totalFilms / ITEMS_PER_PAGE),
+                });
+            } catch (error) {
+                console.error(error);
+                res.status(500).send('Internal Server Error');
+            }
+        }
+    } else{
+        const isModalSearch = req.query.modal === 'true';
 
-            // Modifikasi query pencarian untuk menambahkan genre
-            const genreFilter = genreQuery ? { 'genre': genreQuery } : {};
-            const titleFilter = { 'judul': { $regex: `${query}`, $options: 'i' } };
+        if (isModalSearch) {
+            const result = await Film.find({ 'judul': { $regex: `${query}`, $options: 'i' } }, ['judul', 'tahunRilis', 'rating', 'link_cover']).sort({ 'rating': -1 }).limit(50);
+            res.json(result);
+        } else {
+            try {
+                const page = parseInt(req.query.page) || 1;
+                const skip = (page - 1) * ITEMS_PER_PAGE;
 
-            const totalFilms = await Film.find({ ...titleFilter, ...genreFilter }).sort({ 'rating': -1 }).countDocuments();
-            const result = await Film.find({ ...titleFilter, ...genreFilter }).sort({ 'rating': -1 }).skip(skip).limit(ITEMS_PER_PAGE);
+                const genreFilter = genreQuery ? { 'genre': genreQuery } : {};
+                const titleFilter = { 'judul': { $regex: `${query}`, $options: 'i' } };
 
-            res.render('film/cari', {
-                query,
-                genreQuery,
-                result,
-                currentPage: page,
-                hasNextPage: ITEMS_PER_PAGE * page < totalFilms,
-                hasPreviousPage: page > 1,
-                nextPage: page + 1,
-                previousPage: page - 1,
-                lastPage: Math.ceil(totalFilms / ITEMS_PER_PAGE)
-            });
-        } catch (error) {
-            console.error(error);
-            res.status(500).send('Internal Server Error');
+                const totalFilms = await Film.find({ ...titleFilter, ...genreFilter }).sort({ 'rating': -1 }).countDocuments();
+                const result = await Film.find({ ...titleFilter, ...genreFilter }).sort({ 'rating': -1 }).skip(skip).limit(ITEMS_PER_PAGE);
+
+                res.render('film/cari', {
+                    query,
+                    genreQuery,
+                    result,
+                    currentPage: page,
+                    hasNextPage: ITEMS_PER_PAGE * page < totalFilms,
+                    hasPreviousPage: page > 1,
+                    nextPage: page + 1,
+                    previousPage: page - 1,
+                    lastPage: Math.ceil(totalFilms / ITEMS_PER_PAGE)
+                });
+            } catch (error) {
+                console.error(error);
+                res.status(500).send('Internal Server Error');
+            }
         }
     }
 }
