@@ -23,6 +23,8 @@ Kelompok 6 IF-45-12
 ### Installation
 
 1. Clone the repository
+2. Create cinelog database on MongoDB
+3. Import cinelog.film.json from `/database/cinelog.film.zip` to film collection
 2. Run `npm install`
 
 ### Usage
