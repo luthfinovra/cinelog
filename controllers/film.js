@@ -66,7 +66,6 @@ module.exports.renderFilmRekomendasi = async (req) => {
                         genreCounts[genre] = (genreCounts[genre] || 0) + 1;
                     });
 
-                    console.log(genreCounts);
                     // Pilih Top 3 genre
                     recommendedGenres = Object.keys(genreCounts)
                         .sort((a, b) => genreCounts[b] - genreCounts[a])
@@ -75,7 +74,6 @@ module.exports.renderFilmRekomendasi = async (req) => {
             }
         }
 
-        console.log(recommendedGenres);
         const films = recommendedGenres.length > 0
             ? await Film.find({ genre: { $in: recommendedGenres } })
                   .sort({ rating: -1 })
